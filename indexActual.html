@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="src/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>TCI Agencia aduanal</title>
+</head>
+<style type="text/css">
+    .bx-message-square-error
+    {
+        color: white;
+        margin-top: -8px;
+        background-color: red;
+        border-radius: 8px;
+    }
+    .bx-message-square-error:hover
+    {
+        color: red;
+        margin-top: -8px;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    #occce
+    {
+            top: -358px;
+    position: absolute;
+    left: -108px;
+    background-color: crimson;
+    color: white;
+    }
+    #occce a
+    {
+        color: #4080ff;
+    }
+    #quejas a
+    {
+        color: #4080ff;
+    }
+    .certificate-cuadro:nth-child(1) 
+    {
+        width: 140px;
+    }
+    .container-politica
+    {
+        display: block;
+        width: 60%;
+        padding-top: 30px;
+        margin: auto;
+        align-items: center;
+        padding-bottom: 35px;
+        border-radius: 20px;
+        padding: 38px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+    .seccion-certificado {
+    margin-bottom: 130px;
+    }
+    .container-flex {
+    margin: 170px auto;
+    text-align: center;
+    }
+</style>
+<body>
+    <!-- <div class="remodelacion">
+    <p>
+        <i class='bx bxs-info-circle'></i>El AVC reemplaza al DODA o PITA
+        Con la entrada en vigor del Decreto que prevé diversas disposiciones relacionadas con la Agencia Nacional de Aduanas de México (ANAM) , esta contará con su propia infraestructura tecnológica, de tal manera, que en vez del PITA y el DODA, utilizará el AVC, cuyo objetivo será la simplificación del despacho aduanero de las mercancías.
+        <a href="https://www.linkedin.com/company/tci-agencia-aduanal-transporte">
+        Linkedin.</a> 
+    </p>
+    </div>  -->
+
+    <nav>
+         <div class="div-nav">
+            <img src="src/logo.png" alt="">
+                <div class="enlaces-container">
+                    <a class="enlace" href="#servicios">Servicios</a>
+                    <a class="enlace" href="#terrestre">Equipo de Transporte</a>
+                    <a class="enlace" href="#clientes">Clientes</a>
+                    <a class="enlace" href="#empresa">Empresa Líder</a>
+                    <a class="enlace" href="#divEquipo">Únete a Nuestro Equipo</a> 
+                    <a  class="button-cta-nav" href="#cotizador">Cotizar mi envío</a>
+                </div>
+            <i class='bx bx-menu' id="open-menu"></i>
+       </div>
+     
+    </nav>
+
+    <div class="nav-responsive" id="nav-responsive">
+            <div class="enlaces-container2">
+                <a class="cerrar" id="ocultar">X</a> 
+                <a class="enlace" href="#servicios">Servicios</a>
+                <a class="enlace"  href="#terrestre">Equipo de Transporte</a>
+                <a class="enlace" href="#clientes">Clientes</a>
+                <a class="enlace" href="#empresa">Empresa Líder</a>
+                <a class="enlace" href="#divEquipo">Únete a Nuestro Equipo</a>
+                <a  class="button-cta-responsive" href="#cotizador">Cotizar mi envío</a>
+            </div>
+     <i class='bx bx-x' id="ocultar"></i>
+   </div>
+
+    <!----------Landing Page----------->
+    <header>
+      <div class="container-head">
+          <div class="container-text">
+                <h1>CON TCI, <br> LLEGA
+                    MÁS LEJOS.</h1>
+                <h2> Somos una<b style="font-weight:bold;"> Agencia Aduanal,
+                    <br> Logística</b> y de <b style="font-weight:bold;">Transporte,</b> <br>
+                     <br> Rápido,  Completo y Seguro.</h2>
+                <h3>Más de 30 años nos respaldan</h3> <br> 
+                <a  class="button-cta" href="#cotizador">Cotizar mi envío</a>
+         </div>
+
+        <div class="container-img">
+            <img src="src/Nuevo.png" alt="">
+        </div>
+    </div>
+</header>
+<!----------- TERMINA LANDING PAGE --->
+
+
+<!-- CERTIFICACIONES -->
+
+<section class="seccion-certificado">
+    <h2 class="titulo">NUESTRAS CERTIFICACIONES</h2>
+    <div class="container-certificate">
+        <img class="certificate-cuadro" src="src/Logo-R026.png" alt="">
+        <img class="ctpat" src="src/Logo-CTPAT.png" alt="">
+        <img class="certificate-cuadro" src="src/LOGO-ISO.png" alt="">
+   </div>
+</section>
+    <div class="container-politica">
+        <h2 class="titulo">POLITICA DE CALIDAD</h2>
+        <p class="p" style="text-align: justify;">
+            Trámites de Comercio Internacional lleva a cabo los trámites aduanales de acuerdo con los requerimientos del cliente y en apego a las normas y leyes aplicables, mejorando continuamente la eficacia del sistema de gestión de calidad, aplicando los recursos humanos y técnicos para el logro de los objetivo
+        </p>
+   </div>
+
+
+<!-- SERVICIOS -->
+
+
+<section class="container-flex" id="servicios">
+    <h2 class="titulo">NUESTROS SERVICIOS</h2>
+    <div class="container-services">
+        <div class="container-aduana">
+            <img src="src/TCI_Aduanal.png" alt="">
+            <h3 class="subtitulo">AGENCIA ADUANAL</h3>
+            <p class="p">Una Agencia Aduanal 
+                Mexicana, <br> con más de 30 años
+                de experiencia en el servicio.</p> <br>
+            <!-- <a href="" class="button-cta">Saber más</a> -->
+            <br>
+        </div>
+
+        <div class="container-transporte">
+        
+
+            <h3 class="subtitulo">TRANSPORTE NACIONAL <br>
+                E INTERNACIONAL</h3>
+            <p class="p">Trámites de comercio internacional, se 
+                especializa en el transporte de mercancía,
+                nacional e internacional, por cielo, 
+                mar y tierra.</p>
+                <br>
+                <!-- <a href="" class="button-cta">Saber más</a> -->
+                <br>
+                <img src="src/TCI_Transporte.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="transporte">
+
+    <div class="container-transport">
+
+        <div class="img-transport">
+
+            <img src="src/transporte.gif" alt="">
+        </div>
+
+        <div class="text-transport">
+
+            <h2 class="titulo">POR CIELO, <br> POR MAR  <br>
+                Y POR TIERRA.</h2>
+
+            <p class="p">Nada nos detiene. <br>
+               Ofrecemos todas 
+               las <br> vías de  transporte  <br>
+               para que tu carga <br>
+               siempre llegue.</p> <br> <br>
+            <a href="#cotizador" class="button-cta">Ver cómo</a>
+    </div>
+</div>
+</section>
+<!-- TERMINA SERVICIOS -->
+
+<section class="terrestre">
+
+    <div class="container-terrestre" id="terrestre">
+      <div class="text-terrestre">
+        <h2 class="titulo">
+            TODO PARA TU <br>
+            FLETE TERRESTRE
+        </h2>
+        <p class="p"> 
+            <i class='bx bx-check'></i>3.5 toneladas  <br>
+            <i class='bx bx-check'></i>7 toneladas  <br>
+            <i class='bx bx-check'></i>Caja refrigerada <br>
+            <i class='bx bx-check'></i>Caja seca<br>
+            <i class='bx bx-check'></i>Pickup 600kgs<br>
+            <i class='bx bx-check'></i>Plataformas <br>
+            <i class='bx bx-check'></i>Tractocamiones
+        </p>
+        <br>
+        <br>
+
+        <a href="#cotizador" class="button-cta">Cotizar mi flete</a>
+
+      </div>
+        <div class="img-terrestre">
+            <img src="src/Logistica.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!--   EMPIEZA SECCIÓN CLIENTES -->
+
+<section class="clientes">
+
+    <div class="container-clientes" id="clientes">
+
+        <div class="img-clientes">
+
+            <div class="clientes-1">
+                <img class="img-cliente"  src="src/TCI SITE/PIMICO 1.png" alt="">
+                <h4>Químico</h4>
+            </div>
+
+            <div class="clientes-1">
+                <img class="img-cliente" src="src/TCI SITE/CLOTHES 1.png" alt="">
+                <h4>Textil</h4>
+            </div>
+            <div class="clientes-1">
+                <img class="img-cliente" src="src/TCI SITE/comida-sana 1.png" alt="">
+                <h4>Alimenticio</h4>
+            </div>
+            <div class="clientes-1">
+                <img class="img-cliente" src="src/TCI SITE/MINERIA 1.png" alt="">
+                <h4>Minero</h4>
+            </div>
+            <div class="clientes-1">
+                <img class="client-logo" src="src/logo.png" alt="">
+            </div>
+            <div class="clientes-1">
+                <img class="img-cliente" src="src/TCI SITE/INDUSTRIA 1.png" alt="">
+                <h4>Industrial</h4>
+            </div>
+            <div class="clientes-1">
+                <img  class="img-cliente" src="src/TCI SITE/AUTO 1.png" alt="">
+                <h4>Automotriz</h4>
+            </div>
+            <div class="clientes-1">
+                <img class="img-cliente" src="src/TCI SITE/block 2.png" alt="">
+                <h4>Acerero</h4>
+            </div>
+
+            <div class="clientes-1">
+                <img class="img-cliente" src="src/TCI SITE/agricultura.png" alt="">
+                <h4>Agricultura y <br>Ganadería</h4>
+            </div>
+
+        </div>
+        <div class="text-clientes">
+            <h2 class="titulo">
+                NUESTROS CLIENTES
+            </h2> <br>
+            <div class="acesos">
+                <label class="button-clientes" id="clientes-2" >Acceder a clientes
+                </label> <br> <br>
+                <div id="caja-clientes" class="caja-clientes">
+                    <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a>  <br>
+                    <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
+                    <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
+                  </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!-- TERMINA SECCIÓN CLIENTES -->
+
+<!-- EMPIEZA SECCIÓN DE EMPRESA LÍDER -->
+
+<section class="empresa">
+    <h2 class="titulo">EMPRESA LÍDER</h2>
+    <div class="container-empresa" id="empresa">
+
+        <div class="div1">
+
+            <i class='bx bx-support bx-sm'></i>
+            <h3 class="subtitulo-3">Centro de información</h3>
+            <p>Un solo centro de información donde un ejecutivo 
+                de cuenta brindará toda la información necesaria, 
+                que representa una disminución 
+                considerable en tiempos de respuesta.</p>
+        </div>
+        <div class="div1">
+            <i class='bx bxs-bookmark-alt bx-sm'></i>
+            <h3 class="subtitulo-3">Asesoría legal</h3>
+            <p>Asesoría legal a través de nuestro personal
+                 altamente calificado con una amplia
+                 experiencia en operaciones de 
+                 comercio internacional.</p>
+        </div>
+        <div class="div1">
+            <i class='bx bxs-truck bx-sm'></i>
+            <h3 class="subtitulo-3">Transporte propio</h3>
+            <p>Línea de transporte propia contando con una 
+                amplia flotilla de tractocamiones, 
+                plataformas, cajas, camiones y camionetas.</p>
+        </div>
+
+    </div>
+
+        <div class="container-empresa">
+
+        <div class="div1">
+            <i class='bx bxs-chat bx-sm'></i>
+            <h3 class="subtitulo-3">Comunicación total</h3>
+            <p>El enlace con el resto de nuestras oficinas en 
+                otros puntos del país por medio de líneas privadas logrando
+                 así una eficiente comunicación y substanciales ahorros a nuestros 
+                clientes en costos de llamadas de larga distancia.</p>
+        </div>
+        <div class="div1">
+            <i class='bx bxs-report bx-sm' ></i>
+            <h3 class="subtitulo-3">Reportes diarios</h3>
+            <p>Reportes diarios de recepción de mercancías 
+                con la frecuencia y el medio que mejor se adecúe a sus necesidades.</p>
+        </div>
+        <div class="div1">
+            <i class='bx bxs-factory bx-sm'></i>
+            <h3 class="subtitulo-3">Almacenamiento</h3>
+            <p>Almacenaje en nuestras bodegas del lado americano 
+                sin costo para embarques de importación.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TERMINA SECCIÓN DE EMPRESA LÍDER -->
+
+<!-- COMIENZA SECCIÓN DE COTIZADOR -->
+
+<section class="cotizador" id="cotizador">
+
+    <div class="container-cotizador" >
+
+        <div class="cotizador-img">
+            <div class="img-background"></div>
+        </div>
+
+        <div class="form">
+
+            <h2 class="subtitulo">COTIZA EN LÍNEA</h2>
+
+            <div class="div-form">
+
+            <form action="">
+            <!-- TIPO DE MERCANCÍA     -->
+            <label for="mercancia">Tipo de Mercancía</label> <br>
+            <input class="select" name="Tipo de Mercancía" id="mercancia">
+               
+            </input>
+
+            <!-- PESO -->
+            <label for="peso">Peso</label> <br>
+            <input type="number" class="input" id="peso"> 
+
+            <div class="origen-destino">
+
+            <!-- Origen -->
+            <div class="origen">
+                <h3>Origen</h3>
+                <label for="selectCities1">País/Estado</label> <br>
+                <input type="text" class="input" name="Estado" id="selectStates1">
+            </input>
+            <label for="selectCities1">Ciudad</label>
+                <input type="text" class="input" name="ciudad" id="selectCities1">     
+            </input>
+            </div>
+
+                <!-- DESTINO -->
+
+                <div class="destino">
+                    <h3>Destino</h3>
+                    <label for="selectCities2">País/Estado</label> <br>
+                    <input type="text" class="input" name="Estado-destino" id="selectStates2">
+                </input>
+                <label for="selectCities2">Ciudad</label> <br>
+                    <input type="text" class="input" name="ciudad-destino" id="selectCities2">
+            </input> <br>
+            </div>
+        </div>
+
+         
+            <!-- Tipo de Unidad -->
+            <div class="unidad-embalaje">
+            <div class="unidad">
+                <label for="mercancia">Tipo de Unidad</label> <br>
+                <input class="input" type="text" name="Unidad" id="unidad">
+            </input>  
+            </div>
+
+            <!-- Tipo de embalaje -->
+            <div class="embalaje">
+            <label for="Embalaje">Tipo de Embalaje</label> <br>
+            <input class="input" type="text" name="Embalaje" id="embalaje">
+            </input>  
+            </div>
+        </div>
+
+            <!-- Transbordo -->
+
+            <div class="transbordo-nombre">
+                <div class="transbordo">
+            <label for="mercancia">Transbordo</label> <br>
+            <select class="input" name="Transbordo" id="transbordo"> 
+                <option value="#">
+                    Selecciona una opción
+                </option>
+                <option value="si">
+                    SÍ</option>
+                 <option value="no">
+                    NO</option>
+                </select>  
+            </div>
+
+            <div class="nombre">
+                <label for="name">Nombre Completo</label> <br>
+                <input type="text" class="input" id="nombre"value="">
+            </div>
+            </div>
+       
+        </div>
+
+        <div class="telefono-email">
+
+            <div class="telefono">
+                <label for="">Número Telefónico</label> <br>
+                <input class="input" id="telefono"type="number">
+            </div>
+            <div class="email">
+                <label for="">Correo Electrónico</label> <br>
+                <input class="input" type="email" id="correo">
+            </div>
+
+        </div>
+
+        <div class="comentario">
+            <label for="">Deja Tu Comentario</label> <br>
+            <textarea name="comentario" cols="30" rows="2" id="comentario"></textarea>
+        </div> <br>
+
+        <a id="btnCotizar" style="cursor:pointer" class="button-cta">Enviar solucitud</a><br><br>
+        <label id="labelCotizar"></label>
+    </form>
+        </div>
+    </div>
+
+</section>
+
+<!-- TERMINA SECCIÓN DE COTIZADOR -->
+
+<!-- ÚNETE AL EQUIPO -->
+
+<section class="equipo">
+
+    <div class="container-equipo" id="divEquipo">
+        <div class="img-equipo">
+            <img src="src/TCI_equipo2.png" alt="">
+        </div>
+        <div class="form-equipo">
+            <h2 class="subtitulo">FORMA PARTE DE <br> NUESTRO EQUIPO</h2>
+            <label class="label-equipo" for="">Nombre Completo</label> <br>
+            <input class="input-equipo" id="nombre-equipo" type="text"> <br>
+            
+            <label class="label-equipo" for="">Teléfono</label> <br>
+            <input class="input-equipo" id="number-equipo" type="number"> <br>
+            <label class="label-equipo" for="">E-mail</label> <br>
+            <input class="input-equipo" id="email-equipo" type="email" name="email"><br>
+            <label class="label-equipo" for="">Área deseada</label> <br>
+            <!--<input class="input-equipo" id="equipo-direccion" type="text"> <br> -->
+            <select class="input" name="equipo-direccion" id="equipo-direccion"> 
+                <option value="#">Selecciona una opción</option>
+                <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Recepción">Recepción</option>
+                <option value="Finanzas">Finanzas</option>
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="Tráfico (transportes)">Tráfico (transportes)</option>
+                <option value="Monitorista">Monitorista</option>
+                <option value="Mecánico">Mecánico</option>
+                <option value="Almacen">Almacen</option>
+                <option value="Operador Nacional">Operador Nacional</option>
+                <option value="Operador B1">Operador B1</option>
+                </select> 
+            <a id="btnVacantes" style="cursor: pointer;" class="button-cta-equipo">Enviar</a><br>
+            <label id="labelVacantes"></label>
+        </div>
+    </div>
+</section>
+
+
+<!-- IFRAME -->
+<div class="iframe">
+    <div class="text-iframe">
+      <h2>Más sobre TCI</h2>
+    </div>
+    <div class="iframe-iframe">
+        <button id="hola">Linkedin</button>
+        <button id="adios">facebook</button>
+        <div class="iframe-linkedin"  id="link">
+            <p>Más sobre nosotros en Linkedin</p>
+            <a href="https://www.linkedin.com/company/tci-agencia-aduanal-transporte/"><img src="src/tci.jpg" alt=""></a>    
+        </div>
+        <div class="iframe-fb" id="fb">
+        <p>Más sobre nosotros en facebook</p>
+     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftcitransportes%2F&tabs=videos&width=700&height=200&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="500" height="165" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    <!-- EMPIEZA FOOTER -->
+    </div>
+</div>
+</div>
+
+<footer>
+    <div class="container-footer">
+        <div class="logo">
+            <img src="src/logoblanco.png" alt="">
+        </div>
+
+        <p>
+            Calle Hilatura 291, <br> Parque Industrial Lajat,  <br>
+            C.P. 27280 Torreón, Coah., México. <br>
+            Tel: (871) 729 75 00 <br>
+            tci@tci.com.mx 
+        </p>
+         <div>
+                <div class="myDIV"><p id="mostrar-quejas">Quejas y sugerencias</p></div>
+                <div class="hide" id="quejas">
+                    <p id="occce">En caso necesario a OCCCE
+                         (organismo certificador)<br>al correo:
+                        <a href="mailto:alejandra.rodriguez@occce.mx"><u>alejandra.rodriguez@occce.mx.</u></a>
+                    </p>
+                    <p>
+                        <i class='bx bx-message-square-error bx-md' id="quejas"></i> <br>
+                        Con gusto atendemos sus quejas y sugerencias en el correo: <a href="mailto:calidad@tci.com.mx"><u>calidad@tci.com.mx</u></a>
+                    </p>
+                    <i class='bx bx-x' id="ocultar-quejas"></i>
+                  </div> <br>
+                    <br>
+                    
+            </div>
+         <!-- <p>
+            Soporte: <br>
+            tci@tci.com.mx  <br>
+            871 7297500
+         </p> -->
+         <p>
+            <a href="https://www.facebook.com/tcitransportes" 
+                target="_blank"><i class='bx bxl-facebook-circle bx-sm'>
+                </i>
+            </a>
+            <a href="https://www.linkedin.com/company/tci-agencia-aduanal-transporte/" 
+            target="_blank">
+                <i class='bx bxl-linkedin-square bx-sm' >
+                </i>
+            </a> 
+            <a href="https://www.youtube.com/channel/UCLL4OR1GD-5Tg9f1qiIxEdg"
+            target="_blank">
+                <i class='bx bxl-youtube bx-sm' ></i>
+            </a>
+        </p>
+    </div>
+</footer>
+
+<!-- TERMINA FOOTER -->
+<script src="javascript.js"></script>
+<script type="text/javascript">
+$("#occce").hide();
+
+$("#quejas").click(function(){
+  $("#occce").toggle(500);
+});
+
+</script>
+</body>
+</html>
