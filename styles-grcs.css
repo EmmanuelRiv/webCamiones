@@ -54,10 +54,9 @@
     text-align: start;
 }
 
-
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 .div-nav img {
     width: 150px;
@@ -407,9 +406,9 @@ nav {
     justify-content: center;
     height: 500px;
     align-items: center;
-    /* background-color: white; */
-    background-color: #2A282A;
-    color: white;
+    background-color: white;
+    /* background-color: #2A282A; */
+    color: #2A282A;
 }
 
 
@@ -768,10 +767,6 @@ input[type="radio"] {
     padding: 0px;
     background-color: white;
     background-repeat: no-repeat;
-    /* background-image: url('src/img-grcs/BANNER-INICIO-1-4.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 .quote-container-seccion-1 {
@@ -1444,6 +1439,7 @@ footer {
 .seccion-certificado {
     padding: 20px;
     text-align: center;
+    height: 350px;
     background-color: white;
 }
 
@@ -1468,3 +1464,41 @@ footer {
     text-align: justify;
     hyphens: auto;
 } */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+
+/* section {
+    padding: 100px 20px;
+    height: 100vh;
+} */
+
+.hover-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-image:hover {
+    transform: translateY(-20px);
+}

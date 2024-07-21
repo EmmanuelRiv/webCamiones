@@ -37,17 +37,34 @@ abrirClientes.addEventListener('click', () => {
 
 
 
-const link = document.getElementById('link');
-const fb = document.getElementById('fb');
-const hola = document.getElementById('hola');
-const adios = document.getElementById('adios');
+// const link = document.getElementById('link');
+// const fb = document.getElementById('fb');
+// const hola = document.getElementById('hola');
+// const adios = document.getElementById('adios');
 
-hola.addEventListener('click', () => {
-    link.classList.add('hola');
-    fb.classList.add('adios');
-});
+// hola.addEventListener('click', () => {
+//     link.classList.add('hola');
+//     fb.classList.add('adios');
+// });
 
-adios.addEventListener('click', () => {
-    fb.classList.remove('adios');
-    link.classList.remove('hola');
-});
+// adios.addEventListener('click', () => {
+//     fb.classList.remove('adios');
+//     link.classList.remove('hola');
+// });
+
+
+const links = document.querySelectorAll('.nav-link');
+console.log(links);
+for (const link of links) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetClass = this.getAttribute('data-target');
+        const targetSection = document.querySelector(`.${targetClass}`);
+
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+}

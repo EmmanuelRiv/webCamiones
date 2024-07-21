@@ -121,14 +121,12 @@
 
         <div class="div-nav">
             <img src="src/logoblanco.png">
-            <!-- <img src="src/logo.png" alt=""> -->
             <div class="enlaces-container">
-                <a class="enlace" href="#servicios">SERVICIOS</a>
-                <a class="enlace" href="#terrestre">EQUIPO TRANSPORTE</a>
-                <a class="enlace" href="#clientes-seccion">CLIENTES</a>
-                <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
-                <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
-                <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
+                <a class="enlace nav-link" data-target="servicios" href="#">SERVICIOS</a>
+                <a class="enlace nav-link" data-target="terrestre" href="#">EQUIPO TRANSPORTE</a>
+                <a class="enlace nav-link" data-target="clientes-seccion" href="#">CLIENTES</a>
+                <a class="enlace nav-link" data-target="divEquipo" href="#divEquipo">ÚNETE AL EQUIPO</a>
+                <a class="enlace nav-link" data-target="cotizador" href="#">COTIZAR EL ENVÍO</a>
             </div>
             <i class='bx bx-menu' id="open-menu"></i>
         </div>
@@ -140,14 +138,12 @@
     <div class="nav-responsive" id="nav-responsive">
         <div class="enlaces-container2">
             <a class="cerrar" id="ocultar">X</a>
-            <a class="enlace" href="#servicios">SERVICIOS</a>
-            <a class="enlace" href="#terrestre">EQUIPO DE TRANSPORTE</a>
-            <a class="enlace" href="#clientes-seccion">CLIENTES</a>
-            <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
-            <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
-            <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
+            <a class="enlace nav-link" data-target="servicios" href="#">SERVICIOS</a>
+            <a class="enlace nav-link" data-target="terrestre" href="#">EQUIPO DE TRANSPORTE</a>
+            <a class="enlace nav-link" data-target="clientes-seccion" href="#">CLIENTES</a>
+            <a class="enlace nav-link" data-target="divEquipo" href="#">ÚNETE AL EQUIPO</a>
+            <a class="enlace nav-link" data-target="cotizador" href="#">COTIZAR EL ENVÍO</a>
         </div>
-        <!-- <i class='bx bx-x' id="ocultar"></i> -->
     </div>
 
     <!----------Landing Page----------->
@@ -165,7 +161,6 @@
                         font-weight-bold mb-3">Logistica y de transporte</h2>
                         <p class="text-black mb-2
                         ">Rápido, Completo y Seguro.</p>
-                        <br>
                         <div class="mb-4">
                             <section class="stats-section">
                                 <div class="stat">
@@ -233,134 +228,71 @@
         </div>
     </section>
 
-    <section class="centered-seccion-3" id="servicios">
+    <section class="centered-seccion-3 servicios" id="servicios">
         <div class="container-seccion-3 text-center">
             <h1 class=" title-seccion-3 font-weight-bold mb-0">Nuestro <label class="text-red">Objetivo</label> </h1>
             <h6 class=" title-seccion-3 font-weight-bold mb-4"> Ofrecer un servicio integral a nuestros clientes</h6>
             <div class="steps-centered-seccion-3 mb-4">
                 <div>
-                    <img class="mb-2 img-centered-seccion-3" src="src/img-grcs/Un solo centro de información.png" alt="">
+                    <img class="mb-2 img-centered-seccion-3 hover-image" src="src/img-grcs/Un solo centro de información.png" alt="">
                     <h3 class="font-weight-bold">Centro de información</h3>
                 </div>
                 <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Asesoría legal.png" alt="">
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Asesoría legal.png" alt="">
                     <h3 class="font-weight-bold">Asesoría legal</h3>
                 </div>
 
                 <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Almacenaje y distribución en nuestras bodegas del lado americano.png" alt="">
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Almacenaje y distribución en nuestras bodegas del lado americano.png" alt="">
                     <h3 class="font-weight-bold"> Almacenaje en bodegas</h3>
                 </div>
             </div>
             <div class="steps-centered-seccion-3 mb-4">
                 <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Línea de transporte propia,.png" alt="">
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Línea de transporte propia,.png" alt="">
                     <h3 class="font-weight-bold">Línea de transporte propia</h3>
                 </div>
                 <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Notificaciones diarias.png" alt="">
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Notificaciones diarias.png" alt="">
                     <h3 class="font-weight-bold"> Notificaciones diarias</h3>
                 </div>
                 <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Reportes y Expediente Digital.png" alt="">
-                    <h3 class="font-weight-bold"> Exportación y Importación</h3>
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Reportes y Expediente Digital.png" alt="">
+                    <h3 class="font-weight-bold"> Exportación e Importación</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="centered-seccion-4">
-        <div class="container-seccion-4 ">
-            <h1 class="font-weigth-bold mb-2 text-center"> Trámites de Comercio Internacional, S. C.</h1>
-            <p class="text-center mb-0">Con oficinas en el norte y sureste de México y el sur de Estados Unidos dedicada a la exportación, importación y transporte de bienes entre otros países</p>
-            <!-- <p class="text-center mb-4">importación y transporte de bienes entre otros países</p> -->
-            <div class="tabs-seccion-4 text-center">
-                <input type="radio" id="tab1" name="tab-group" checked>
-                <label for="tab1" class="tab-label tab-label-antecedentes font-weigth-bold">Antecedentes</label>
-
-                <!-- <input type="radio" id="tab2" name="tab-group"> -->
-                <!-- <label for="tab2" class="tab-label">Agencia aduanal
-                </label> -->
-                <div class="tab-content">
-                    <div id="content1" class="content text-start">
-                        <section class="service-section">
-                            <div class="service-container">
-                                <div class="service-content">
-                                    <div>
-                                        <h4 class=" mb-0">TCI nace en la ciudad de Torreón Coahuila <br> en el año 1990</h4>
-                                        <!-- <button class="btn-cotizar-red mb-4">Ver como</button> -->
-                                    </div>
-                                    <div>
-                                        <ul class="service-details">
-                                            <h4 style="list-style: none;"> Posteriormente se crean las siguientes empresas afiliadas:</h4>
-                                            <li>TCI Transportes, S.A. DE C. V</li>
-                                            <li>TCI Forwarding, Inc. (Bodegas en el paso y Laredo, Texas)</li>
-                                            <li> TCI Transfers INC.</li>
-                                            <li> TCI Logistics INC.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- <div id="content2" class="content  text-start">
-                        <section class="service-section">
-                            <div class="service-container">
-                                <div class="service-content">
-                                    <div>
-                                        <h2 class=" mb-2">Todo para tu flete terreste </h2>
-                                        <button class="btn-cotizar-red mb-4">Cotizar mi flete</button>
-                                    </div>
-                                    <div>
-                                        <ul class="service-details">
-                                            <li style="list-style: none;" class="mb-2">Una Agencia Aduanal Mexicana, con más de 30 años de experiencia en el servicio.</li>
-                                            <li>3.5 toneladas</li>
-                                            <li>7 toneladas</li>
-                                            <li>Caja refrigerada</li>
-                                            <li>Caja seca</li>
-                                            <li>Pickup 600kgs</li>
-                                            <li>Plataformas</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div> -->
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="centered-seccion-5" id="terrestre">
+    <section class="centered-seccion-5 terrestre" id="terrestre">
         <div class="container-seccion-5">
             <h1 class="font-weight-bold text-center mb-2">Logística Global <label class="text-red">Especializada</label></h1>
             <p class="text-center ">Nuestras soluciones </p>
             <p class="text-center mb-4">Conociendo sus necesidades y ofreciendo soluciones a la medida</p>
             <div class="clients-container mb-6">
                 <div class="client">
-                    <img class=" mb-2" src="src/img-grcs/aereo.png" alt="">
+                    <img class="hover-image mb-2" src="src/img-grcs/aereo.png" alt="">
                     <h3 class="font-weight-bold">Aéreos</h3>
                 </div>
                 <div class="client">
-                    <img class="mb-2" src="src/img-grcs/TERR.png" alt="">
+                    <img class=" hover-image mb-2" src="src/img-grcs/TERR.png" alt="">
                     <h3 class="font-weight-bold"> Terrestres</h3>
                 </div>
                 <div class="client">
-                    <img class="mb-2" src="src/img-grcs/MARITIM.png" alt="">
+                    <img class="hover-image mb-2" src="src/img-grcs/MARITIM.png" alt="">
                     <h3 class="font-weight-bold"> Marítimos</h3>
                 </div>
             </div>
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <a class="btn-cotizar mb-4" href="#cotizador">
                         Cotizar mi envio
                 </a>
-            </div>
+            </div> -->
 
         </div>
     </section>
 
-    <section class="centered-seccion-6" id="clientes-seccion">
+    <section class="centered-seccion-6 clientes-seccion" id="clientes-seccion">
         <div class="container-seccion-6" id="clientes">
             <div class="left-section">
                 <h1 class="text-black">Nuestros <label class="text-red">Clientes</label></h1>
@@ -387,35 +319,35 @@
             </div>
             <div class="right-section text-center">
                 <div>
-                    <img src="src/img-grcs/textil.png" alt="Automobility">
+                    <img class="hover-image" src="src/img-grcs/textil.png" alt="Automobility">
                     <h3 class="text-black">Industria textil</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/industrial.png" alt="Aeroespacial">
+                    <img class="hover-image" src="src/img-grcs/industrial.png" alt="Aeroespacial">
                     <h3 class="text-black">Industrial</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/maderero.png" alt="Manufactura">
+                    <img class="hover-image" src="src/img-grcs/maderero.png" alt="Manufactura">
                     <h3 class="text-black">Madedero</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/Automotriz.png" alt="MRO">
+                    <img class="hover-image" src="src/img-grcs/Automotriz.png" alt="MRO">
                     <h3 class="text-black">Automotriz </h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/minero.png" alt="Tecnología">
+                    <img class="hover-image" src="src/img-grcs/minero.png" alt="Tecnología">
                     <h3 class="text-black">Mineria</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/acerero.png" alt="Salud">
+                    <img class="hover-image" src="src/img-grcs/acerero.png" alt="Salud">
                     <h3 class="text-black">Acerero</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/agricultura.png" alt="Energía">
+                    <img class="hover-image" src="src/img-grcs/agricultura.png" alt="Energía">
                     <h3 class="text-black">Agricultura</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/alimenticio.png" alt="Perecederos">
+                    <img class="hover-image" src="src/img-grcs/alimenticio.png" alt="Perecederos">
                     <h3 class="text-black">Alimenticio</h3>
                 </div>
             </div>
@@ -426,10 +358,10 @@
     <section class="centered-seccion-7">
         <div class="container-seccion-7 ">
             <div class="seccion-7-left mb-4">
-                <h1 class="mb-0 font-weight-bold"><label class="text-red">Puntos</label> de operaciones</h1>
-                <p class="mb-3">Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana</p>
+                <h1 class="mb-0 font-weight-bold">Puntos de operaciones</h1>
+                <p class="mb-3">Nuestra empresa cuenta con oficinas propias en los <br> puntos más importantes de la República Mexicana</p>
                 <div>
-                    <ul style="list-style: circle; font-size: 14px;">
+                    <ul style="list-style: circle; font-size: 13px;">
                         <li>Laredo, Tx.</li>
                         <li> El Paso, Tx.
                         </li>
@@ -460,7 +392,108 @@
         </div>
     </section>
 
-    <section class="quote-section" id="cotizador">
+    <section class="quote-section divEquipo" id="divEquipo">
+        <div class="quote-container">
+
+            <div class="form-content">
+                <h1>Forma parte de <label class="text-red">Equipo</label> </h1>
+                <p>Únete a nuestro equipo de trabajo y forma parte de una
+                    <br> empresa líder en el mercado de transporte y logística.</p>
+                <form action="">
+                    <div class="form-group
+                    ">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" class="input input-equipo" id="nombre-equipo">
+                    </div>
+                    <div class="form-group
+                    ">
+                        <label for="name">Teléfono</label>
+                        <input class="input-equipo" id="number-equipo" type="number">
+                    </div>
+                    <div class="form-group
+                    ">
+                        <label for="name">E-mail</label>
+                        <input class="input-equipo" id="email-equipo" type="email" name="email">
+                    </div>
+                    <div class="form-group mb-3
+                    ">
+                        <label for="name">Área deseada</label>
+                        <select class="input input-equipo" name="equipo-direccion" id="equipo-direccion"> 
+                            <option value="#">Selecciona una opción</option>
+                            <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Recepción">Recepción</option>
+                            <option value="Finanzas">Finanzas</option>
+                            <option value="Contabilidad">Contabilidad</option>
+                            <option value="Tráfico (transportes)">Tráfico (transportes)</option>
+                            <option value="Monitorista">Monitorista</option>
+                            <option value="Mecánico">Mecánico</option>
+                            <option value="Almacen">Almacen</option>
+                            <option value="Operador Nacional">Operador Nacional</option>
+                            <option value="Operador B1">Operador B1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red">Enviar información</a><br>
+                        <label id="labelVacantes"></label>
+                    </div>
+
+            </div>
+            <div class="image-content">
+                <img src="src/img-grcs/TCI_equipo2-copia.png" alt="">
+            </div>
+            <!-- <div class="form-equipo">
+                <h2 class="subtitulo">FORMA PARTE DE <br> NUESTRO EQUIPO</h2>
+                <div class="mb-3">
+                    <label class="label-equipo" for="">Nombre Completo</label> <br>
+                    <input class="input-equipo" id="nombre-equipo" type="text"> <br>
+
+                    <label class="label-equipo" for="">Teléfono</label> <br>
+                    <input class="input-equipo" id="number-equipo" type="number"> <br>
+                    <label class="label-equipo" for="">E-mail</label> <br>
+                    <input class="input-equipo" id="email-equipo" type="email" name="email"><br>
+                    <label class="label-equipo" for="">Área deseada</label> <br>
+                    <select class="input" name="equipo-direccion" id="equipo-direccion"> 
+                    <option value="#">Selecciona una opción</option>
+                    <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
+                    <option value="Administrativo">Administrativo</option>
+                    <option value="Recepción">Recepción</option>
+                    <option value="Finanzas">Finanzas</option>
+                    <option value="Contabilidad">Contabilidad</option>
+                    <option value="Tráfico (transportes)">Tráfico (transportes)</option>
+                    <option value="Monitorista">Monitorista</option>
+                    <option value="Mecánico">Mecánico</option>
+                    <option value="Almacen">Almacen</option>
+                    <option value="Operador Nacional">Operador Nacional</option>
+                    <option value="Operador B1">Operador B1</option>
+                    </select>
+                </div>
+                <div>
+                    <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red">Enviar información</a><br>
+                    <label id="labelVacantes"></label>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="centered-seccion-7 seccion-nosotros ">
+        <div class="container-seccion-7 text-center">
+            <div class="mb-4">
+                <div class="mb-4">
+                    <h1 class="mb-2 font-weight-bold text-white ">Por cielo, mar y tierra nada nos detiene.</h1>
+                    <p class="mb-1">Ofrecemos todas las vías de transporte para que tu carga siempre llegue</p>
+                </div>
+                <div class="text-center">
+                    <a class="btn-cotizar-red  mb-4" href="about.html">
+                        Sobre nosotros
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section cotizador" id="cotizador">
         <div class="quote-container">
             <div class="form-content">
                 <h1 class="mb-0">Cotizar en línea</h1>
@@ -551,106 +584,6 @@
         </div>
     </section>
 
-
-    <section class="centered-seccion-7 seccion-nosotros ">
-        <div class="container-seccion-7 text-center">
-            <div class="mb-4">
-                <div class="mb-4">
-                    <h1 class="mb-2 font-weight-bold text-white ">Por cielo, mar y tierra nada nos detiene.</h1>
-                    <p class="mb-1">Ofrecemos todas las vías de transporte para que tu carga siempre llegue</p>
-                </div>
-                <div class="text-center">
-                    <a class="btn-cotizar-red  mb-4" href="about.html">
-                        Sobre nosotros
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="quote-section" id="divEquipo">
-        <div class="quote-container">
-
-            <div class="form-content">
-                <h1>Forma parte de <label class="text-red">Equipo</label> </h1>
-                <p>Únete a nuestro equipo de trabajo y forma parte de una
-                    <br> empresa líder en el mercado de transporte y logística.</p>
-                <form action="">
-                    <div class="form-group
-                    ">
-                        <label for="name">Nombre Completo</label>
-                        <input type="text" class="input input-equipo" id="nombre-equipo">
-                    </div>
-                    <div class="form-group
-                    ">
-                        <label for="name">Teléfono</label>
-                        <input class="input-equipo" id="number-equipo" type="number">
-                    </div>
-                    <div class="form-group
-                    ">
-                        <label for="name">E-mail</label>
-                        <input class="input-equipo" id="email-equipo" type="email" name="email">
-                    </div>
-                    <div class="form-group mb-3
-                    ">
-                        <label for="name">Área deseada</label>
-                        <select class="input input-equipo" name="equipo-direccion" id="equipo-direccion"> 
-                            <option value="#">Selecciona una opción</option>
-                            <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
-                            <option value="Administrativo">Administrativo</option>
-                            <option value="Recepción">Recepción</option>
-                            <option value="Finanzas">Finanzas</option>
-                            <option value="Contabilidad">Contabilidad</option>
-                            <option value="Tráfico (transportes)">Tráfico (transportes)</option>
-                            <option value="Monitorista">Monitorista</option>
-                            <option value="Mecánico">Mecánico</option>
-                            <option value="Almacen">Almacen</option>
-                            <option value="Operador Nacional">Operador Nacional</option>
-                            <option value="Operador B1">Operador B1</option>
-                        </select>
-                    </div>
-                    <div>
-                        <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red">Enviar información</a><br>
-                        <label id="labelVacantes"></label>
-                    </div>
-
-            </div>
-            <div class="image-content">
-                <img src="src/img-grcs/TCI_equipo2-copia.png" alt="">
-            </div>
-            <!-- <div class="form-equipo">
-                <h2 class="subtitulo">FORMA PARTE DE <br> NUESTRO EQUIPO</h2>
-                <div class="mb-3">
-                    <label class="label-equipo" for="">Nombre Completo</label> <br>
-                    <input class="input-equipo" id="nombre-equipo" type="text"> <br>
-
-                    <label class="label-equipo" for="">Teléfono</label> <br>
-                    <input class="input-equipo" id="number-equipo" type="number"> <br>
-                    <label class="label-equipo" for="">E-mail</label> <br>
-                    <input class="input-equipo" id="email-equipo" type="email" name="email"><br>
-                    <label class="label-equipo" for="">Área deseada</label> <br>
-                    <select class="input" name="equipo-direccion" id="equipo-direccion"> 
-                    <option value="#">Selecciona una opción</option>
-                    <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
-                    <option value="Administrativo">Administrativo</option>
-                    <option value="Recepción">Recepción</option>
-                    <option value="Finanzas">Finanzas</option>
-                    <option value="Contabilidad">Contabilidad</option>
-                    <option value="Tráfico (transportes)">Tráfico (transportes)</option>
-                    <option value="Monitorista">Monitorista</option>
-                    <option value="Mecánico">Mecánico</option>
-                    <option value="Almacen">Almacen</option>
-                    <option value="Operador Nacional">Operador Nacional</option>
-                    <option value="Operador B1">Operador B1</option>
-                    </select>
-                </div>
-                <div>
-                    <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red">Enviar información</a><br>
-                    <label id="labelVacantes"></label>
-                </div>
-            </div> -->
-        </div>
-    </section>
 
 
 
@@ -1231,6 +1164,7 @@
                     srcAction: 'iframe_src',
                 }
             });
+
         });
     </script>
 
