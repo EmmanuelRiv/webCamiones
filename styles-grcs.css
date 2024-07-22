@@ -404,10 +404,9 @@ nav {
 .centered-seccion-3 {
     display: flex;
     justify-content: center;
-    height: 500px;
+    height: auto;
     align-items: center;
     background-color: white;
-    /* background-color: #2A282A; */
     color: #2A282A;
 }
 
@@ -420,6 +419,10 @@ nav {
     display: flex;
     justify-content: center;
     gap: 100px;
+}
+
+.container-seccion-3 {
+    margin-top: 15px;
 }
 
 .img-centered-seccion-3 {
@@ -1188,15 +1191,15 @@ footer {
         justify-content: center;
         height: auto;
         align-items: center;
-        background-color: #2A282A;
-        color: white;
+        background-color: white;
+        color: #2A282A;
         flex-direction: column-reverse;
     }
     .container-seccion-3 h1 {
         font-size: 30px;
     }
     .container-seccion-3 {
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .steps-centered-seccion-3 {
         display: flex;
