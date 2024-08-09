@@ -51,20 +51,3 @@ abrirClientes.addEventListener('click', () => {
 //     fb.classList.remove('adios');
 //     link.classList.remove('hola');
 // });
-
-
-const links = document.querySelectorAll('.nav-link');
-console.log(links);
-for (const link of links) {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetClass = this.getAttribute('data-target');
-        const targetSection = document.querySelector(`.${targetClass}`);
-
-        window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth'
-        });
-    });
-}
