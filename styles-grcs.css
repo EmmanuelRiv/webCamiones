@@ -760,8 +760,8 @@ input[type="radio"] {
 }
 
 .mapa-img {
-    width: 95%;
-    height: 95%;
+    width: 105%;
+    height: 105%;
 }
 
 .tab-label-antecedentes {
@@ -1423,20 +1423,9 @@ footer {
 
 @media only screen and (min-width: 2560px) {
     .mapa-img {
-        width: 60%;
-        height: 60%;
+        width: 80%;
+        height: 80%;
     }
-    /* .seccion-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 150px;
-        background-image: url(src/img-grcs/BANNER-INICIO-1.png);
-        background-color: white;
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
 }
 
 
