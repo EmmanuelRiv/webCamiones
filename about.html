@@ -38,6 +38,16 @@
                 <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
                 <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
                 <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
+                <div class="acesos">
+                    <button class="button-clientes btn-cotizar-red mb-2" id="clientes-2">
+                    Acceder a clientes
+                </button>
+                    <div id="caja-clientes" class="caja-clientes">
+                        <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
+                        <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
+                        <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
+                    </div>
+                </div>
             </div>
             <i class='bx bx-menu' id="open-menu"></i>
         </div>
@@ -211,15 +221,15 @@
                     <div>
                         <div class="calle">
                             <p class="text-white font-weight-bold">Contacto</p>
-                            <p class="text-white ">Calle Hilatura 291, Parque Industrial Lajat, <br> C.P. 27280 Torreón, Coah., México.
-                                <br> <label class="text-red">Tel: (871) 729 75 00</label> <br> tci@tci.com.mx
+                            <p class="text-white ">Calle Hilatura 291, Parque Industrial Lajat, <br> Torreón, Coah., México. C.P. 27272
+                                <br> Tel: (871) 729 75 00 <br> tci@tci.com.mx
                         </div>
                     </div>
                     <div>
                         <div class="quejas">
                             <p class="text-white font-weight-bold">Quejas y <br> sugerencias</p>
                             <p class="text-white">Con gusto atendemos sus quejas y <br> sugerencias en el correo: <br>
-                                <a class="text-red" href="mailto:calidad@tci.com.mx"><u>calidad@tci.com.mx</u></a>
+                                <a class="text-white" href="mailto:calidad@tci.com.mx"><u>calidad@tci.com.mx</u></a>
                             </p>
                         </div>
                     </div>
@@ -232,6 +242,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <script src="javascript.js"></script>
+
+
+    <script>
+        const buttonClientes = document.getElementById('clientes-2');
+        const cajaClientes = document.getElementById('caja-clientes');
+
+        // Alterna la visibilidad del menú al hacer clic en el botón
+        buttonClientes.addEventListener('click', () => {
+            if (cajaClientes.style.display === 'block') {
+                cajaClientes.style.display = 'none';
+            } else {
+                cajaClientes.style.display = 'block';
+            }
+        });
+
+        // Oculta el menú si se hace clic fuera de él
+        document.addEventListener('click', (event) => {
+            if (!buttonClientes.contains(event.target) && !cajaClientes.contains(event.target)) {
+                cajaClientes.style.display = 'none';
+            }
+        });
+    </script>
 
 
 </body>
