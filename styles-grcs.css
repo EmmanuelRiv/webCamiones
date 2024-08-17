@@ -712,7 +712,7 @@ input[type="radio"] {
     padding: 40px;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 154px;
+    margin-left: 100px;
     margin-right: 154px;
     font-size: 18px;
 }
