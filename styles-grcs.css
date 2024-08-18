@@ -162,7 +162,7 @@ nav {
 
 #caja-clientes a {
     color: #b62201;
-    padding: 8px 16px;
+    padding: 4px 12px;
     text-decoration: none;
     display: block;
 }
@@ -800,8 +800,8 @@ input[type="radio"] {
 }
 
 .mapa-img {
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
 }
 
 .tab-label-antecedentes {
@@ -1050,6 +1050,12 @@ input[type="radio"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.iframe-video {
+    height: 300px;
+    border-radius: 8px;
+    width: 430px;
 }
 
 
@@ -1312,6 +1318,9 @@ footer {
         gap: 20px;
         max-width: 55%;
     }
+    .iframe-video {
+        width: 230px;
+    }
 }
 
 @media (max-width:900px) {
@@ -1401,8 +1410,8 @@ footer {
         display: flex;
         padding: 0px;
         flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .right-seccion-clientes {
         display: none;
@@ -1455,6 +1464,14 @@ footer {
     }
     .video-img-seccion-2 {
         width: 100px;
+    }
+    .iframe-video {
+        height: 130px;
+        border-radius: 8px;
+        width: 300px;
+    }
+    .div-container-seccion-1 {
+        margin-left: 60px;
     }
 }
 
@@ -1687,11 +1704,7 @@ nav ul li a:hover {
 
 .div-container-seccion-1 {
     max-width: 600px;
-    /* Controla el ancho del contenedor */
-    /* margin: 0 auto; */
-    /* Centra el contenedor */
     padding: 0 15px;
-    /* Añade padding para móviles */
 }
 
 .text-with-line {
