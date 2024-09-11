@@ -33,15 +33,15 @@
         <div class="div-nav">
             <img src="src/logoblanco.png">
             <div class="enlaces-container">
-                <a class="enlace nav-link " href="#servicios">SERVICIOS</a>
-                <a class="enlace nav-link" href="#terrestre">EQUIPO TRANSPORTE</a>
-                <a class="enlace nav-link" href="#clientes-seccion">CLIENTES</a>
-                <a class="enlace nav-link" href="#divEquipo">ÚNETE AL EQUIPO</a>
-                <a class="enlace nav-link" href="#cotizador">COTIZAR EL ENVÍO</a>
+                <a class="enlace nav-link serviciostext" href="#servicios">SERVICIOS</a>
+                <a class="enlace nav-link equipotransportetext" href="#terrestre">EQUIPO TRANSPORTE</a>
+                <a class="enlace nav-link clientestext" href="#clientes-seccion">CLIENTES</a>
+                <a class="enlace nav-link unetealtext" href="#divEquipo">ÚNETE AL EQUIPO</a>
+                <a class="enlace nav-link cotizartext" href="#cotizador">COTIZAR EL ENVÍO</a>
 
                 <div class="acesos">
-                    <button class="button-clientes btn-cotizar-red mb-2" id="clientes-2">
-                    Acceder a clientes
+                    <button class="button-clientes btn-cotizar-red mb-2 " id="clientes-2">
+                    <label class="accesclientestext">Acceder a clientes</label>
                 </button>
                     <div id="caja-clientes" class="caja-clientes">
                         <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
@@ -49,18 +49,18 @@
                         <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
                     </div>
                 </div>
-                <!-- 
-                <div class="acesos">
-                    <button class="button-clientes btn-cotizar-red mb-4" id="clientes-2">
-                    Acceder a clientes
-                   </button>
-                    <br>
-                    <div id="caja-clientes" class="caja-clientes">
-                        <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
-                        <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
-                        <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
-                    </div>
-                </div> -->
+            </div>
+            <div id="btnLanguage-en" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('en')">
+                <a class="nav-link enlace-language"></a>
+                <i class='bx bx-globe'></i> EN
+                </a>
+            </div>
+            <div id="btnLanguage-es" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('es')">
+                <a class="nav-link enlace-language "></a>
+                <i class='bx bx-globe'></i> ES
+                </a>
             </div>
             <i class='bx bx-menu' id="open-menu"></i>
         </div>
@@ -71,14 +71,14 @@
     <div class="nav-responsive" id="nav-responsive">
         <div class="enlaces-container2">
             <a class="cerrar" id="ocultar">X</a>
-            <a class="enlace nav-link" href="#servicios">SERVICIOS</a>
-            <a class="enlace nav-link" href="#terrestre">EQUIPO DE TRANSPORTE</a>
-            <a class="enlace nav-link" href="#clientes-seccion">CLIENTES</a>
-            <a class="enlace nav-link" href="#divEquipo">ÚNETE AL EQUIPO</a>
-            <a class="enlace nav-link mb-2" href="#cotizador">COTIZAR EL ENVÍO</a>
+            <a class="enlace nav-link serviciostext" href="#servicios">SERVICIOS</a>
+            <a class="enlace nav-link equipotransportetext" href="#terrestre">EQUIPO DE TRANSPORTE</a>
+            <a class="enlace nav-link clientestext" href="#clientes-seccion">CLIENTES</a>
+            <a class="enlace nav-link unetealtext" href="#divEquipo">ÚNETE AL EQUIPO</a>
+            <a class="enlace nav-link mb-2 cotizartext" href="#cotizador">COTIZAR EL ENVÍO</a>
             <div class="acesos">
                 <button class="button-clientes btn-cotizar-red mb-2" id="clientes-2">
-                Acceder a clientes
+              <label class="accesclientestext">Acceder a clientes</label>   
             </button>
                 <div id="caja-clientes" class="caja-clientes">
                     <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
@@ -87,6 +87,25 @@
                 </div>
             </div>
         </div>
+        <div class="text-center">
+            <div id="btnLanguage-en" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('en')">
+                <a class="nav-link enlace-language"></a>
+                <i class='bx bx-globe'></i> EN
+                </a>
+            </div>
+            <div id="btnLanguage-es" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('es')">
+                <a class="nav-link enlace-language "></a>
+                <i class='bx bx-globe'></i> ES
+                </a>
+            </div>
+        </div>
+        <!-- <div class="language-switch">
+            <a href="#" class="nav-link enlace-language">
+                <i class='bx bx-globe'></i> EN
+            </a>
+        </div> -->
     </div>
 
     <!----------Landing Page----------->
@@ -97,22 +116,22 @@
                 <div class="imagen-seccion-1 image-content"></div>
                 <div class="texto">
                     <div>
-                        <h1 class="text-red
+                        <h1 class="text-red tituloBanner
                         font-weight-bold">Con TCI, <br> llega más lejos.</h1>
-                        <h2 class="text-black">Somos una <label class="font-weight-bold">agencia aduanal,</label> </h2>
+                        <h2 class="text-black tituloDosBanner">Somos una <label class="font-weight-bold">agencia aduanal,</label> </h2>
                         <h2 class="text-black
-                        font-weight-bold mb-3">logística y de transporte</h2>
-                        <p class="text-black mb-2
+                        font-weight-bold mb-3 tituloTresBanner">logística y de transporte</h2>
+                        <p class="text-black mb-2 tituloCuatroBanner
                         ">Rápido, Completo y Seguro.</p>
                         <div class="mb-4">
                             <section class="stats-section">
                                 <div class="stat">
-                                    <h3 class="text-red">+30 años</h3>
-                                    <p>de experiencia</p>
+                                    <h3 class="text-red experencias">+30 años</h3>
+                                    <p class="subtituloExperencias">de experiencia</p>
                                 </div>
                                 <div class="stat">
-                                    <h3 class="text-red">17 puntos</h3>
-                                    <p>de operación</p>
+                                    <h3 class="text-red puntos">17 puntos</h3>
+                                    <p class="subtituloPuntos">de operación</p>
                                 </div>
                             </section>
                         </div>
@@ -155,33 +174,36 @@
             <div class="seccion-video-left">
                 <div class="div-container-seccion-1">
                     <h1 class="text-red
-                    font-weight-bold mb-4">Agencia aduanal / Transportes</h1>
+                    font-weight-bold mb-4 tituloseccionvideo">Agencia aduanal / Transportes</h1>
                     <p class="text-with-line">
-                        <span class="mb-0">Somos una empresa líder en el mercado de transporte y logística, con más de 30 años de experiencia en el sector.</span>
-                        <span class="mb-0">Nuestro compromiso es brindar un servicio de calidad, seguro y eficiente a nuestros clientes.</span>
+                        <span class="mb-0 subtitulo1seccionvideo">Somos una empresa líder en el mercado de transporte y logística, con más de 30 años de experiencia en el sector.</span>
+                        <span class="mb-0 subtitulo2seccionvideo">Nuestro compromiso es brindar un servicio de calidad, seguro y eficiente a nuestros clientes.</span>
                     </p>
                 </div>
             </div>
             <div class="seccion-video-right">
                 <iframe class="iframe-video" src="https://www.youtube.com/embed/CgTPFzyh8QY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
-                <!-- <a id="videoLink" class="text-center" href="https://www.youtube.com/watch?v=CgTPFzyh8QY">
-                    <img src="src/img-grcs/video4.png" alt="Video Thumbnail" class="video-img-seccion-2 hover-image">
-                </a> -->
             </div>
         </div>
     </section>
 
     <section class="centered-seccion-3 servicios" id="servicios">
         <div class="container-seccion-3 ">
-            <h1 class=" title-seccion-3 text-center font-weight-bold mb-0">Nuestro <label class="text-red">Objetivo</label> </h1>
-            <h6 class=" title-seccion-3 text-center font-weight-bold mb-4"> Ofrecer un servicio integral a nuestros clientes</h6>
+            <h1 class=" title-seccion-3 text-center font-weight-bold mb-0 tituloseccionservicios" data-lang-es="Nuestro <label class='text-red'>Objetivo</label>" data-lang-en="Our <label class='text-red'>Goal</label>">Nuestro <label class="text-red">Objetivo</label> </h1>
+            <h6 class=" title-seccion-3 text-center font-weight-bold mb-4 subtituloseccionservicios" data-lang-es="Ofrecer un servicio integral a nuestros clientes" data-lang-en="To offer a comprehensive service to our customers"> Ofrecer un servicio integral a nuestros clientes</h6>
             <div class="steps-centered-seccion-3 mb-4">
                 <div>
                     <img class="mb-2 img-centered-seccion-3 hover-image" src="src/img-grcs/Un solo centro de información.png" alt="">
-                    <h3 class="font-weight-bold">Centro de información</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Centro de información" data-lang-en="Main center">Centro de información</h3>
                     <div>
-                        <p class="text-black">
+                        <p class="text-black" data-lang-es="Un solo centro de información <br> donde un ejecutivo de cuenta <br> brindará toda la información <br> necesaria, que representa una <br> disminución considerable en <br> tiempos de respuesta." data-lang-en="A single information center
+                            where an account executive will
+                            provide all the information
+                            necessary, which represents a
+                            considerable decrease in
+                            response times.
+                            ">
                             Un solo centro de información <br> donde un ejecutivo de cuenta <br> brindará toda la información <br> necesaria, que representa una <br> disminución considerable en <br> tiempos de respuesta.
                         </p>
 
@@ -189,45 +211,52 @@
                 </div>
                 <div>
                     <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Asesoría legal.png" alt="">
-                    <h3 class="font-weight-bold">Asesoría legal</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Asesoría legal" data-lang-en="Legal consultation">Asesoría legal</h3>
                     <div>
-                        <p class="text-black
-                        ">Asesoría legal a través de nuestro <br> personal altamente calificado <br> con una amplia experiencia en <br> operaciones de comercio.</p>
+                        <p class="text-black" data-lang-es="Asesoría legal a través de nuestro <br> personal altamente calificado <br> con una amplia experiencia en <br> operaciones de comercio." data-lang-en="Legal advice through our <br> highly qualified staff with <br> extensive experience in <br> trade operations.">Asesoría legal a través de nuestro <br> personal altamente calificado <br> con una amplia experiencia en <br> operaciones de comercio.</p>
                     </div>
                 </div>
 
                 <div>
                     <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Almacenaje y distribución en nuestras bodegas del lado americano.png" alt="">
-                    <h3 class="font-weight-bold"> Almacenaje en bodegas</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Almacenaje en bodegas" data-lang-en="Storage in warehouses"> Almacenaje en bodegas</h3>
                     <div>
-                        <p class="text-black
-                        ">Almacenaje en nuestras bodegas <br> del lado americano sin costo para <br> embarques de importación.</p>
+                        <p class="text-black" data-lang-es="Almacenaje en nuestras bodegas <br> del lado americano sin costo para <br> embarques de importación." data-lang-en="Storage in our warehouses <br> on
+                            the American side at no cost to <br>
+                            import shipments.">Almacenaje en nuestras bodegas <br> del lado americano sin costo para <br> embarques de importación.</p>
                     </div>
                 </div>
             </div>
             <div class="steps-centered-seccion-3 mb-4">
                 <div>
                     <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Línea de transporte propia,.png" alt="">
-                    <h3 class="font-weight-bold">Línea de transporte propia</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Línea de transporte propia" data-lang-en="Own transport line">Línea de transporte propia</h3>
                     <div>
-                        <p class="text-black
+                        <p class="text-black" data-lang-es="Línea de transporte propia <br> contando con una amplia flotilla <br> de tractocamiones, plataformas, <br> cajas, camiones y camionetas." data-lang-en="Own transport line with a large <br>
+                        fleet tractor trucks, flatbeds,<br>
+                        boxes, trucks and vans.
                         ">Línea de transporte propia <br> contando con una amplia flotilla <br> de tractocamiones, plataformas, <br> cajas, camiones y camionetas.</p>
                     </div>
                 </div>
                 <div>
                     <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Notificaciones diarias.png" alt="">
-                    <h3 class="font-weight-bold"> Notificaciones diarias</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Notificaciones diarias" data-lang-en="Daily notifications"> Notificaciones diarias</h3>
                     <div>
-                        <p class="text-black
-                        ">El enlace con el resto de nuestras <br> oficinas en otros puntos del país <br> por medio de líneas privadas <br> logrando una eficiente comunicación <br> a nuestros clientes.</p>
+                        <p class="text-black" data-lang-es="El enlace con el resto de nuestras <br> oficinas en otros puntos del país <br> por medio de líneas privadas <br> logrando una eficiente comunicación <br> a nuestros clientes." data-lang-en="The link to the rest of our offices <br>
+                            in other parts of the country via <br>
+                            private lines achieving efficient <br>
+                            communication to our customers.
+                            ">El enlace con el resto de nuestras <br> oficinas en otros puntos del país <br> por medio de líneas privadas <br> logrando una eficiente comunicación <br> a nuestros clientes.</p>
                     </div>
                 </div>
                 <div>
                     <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Reportes y Expediente Digital.png" alt="">
-                    <h3 class="font-weight-bold"> Exportación e Importación</h3>
+                    <h3 class="font-weight-bold" data-lang-es=" Exportación e Importación" data-lang-en="Export & Import"> Exportación e Importación</h3>
                     <div>
-                        <p class="text-black
-                        ">Reportes diarios de recepción de <br> mercancías con la frecuencia y el <br> medio que mejor se adecúe a sus <br> necesidades.</p>
+                        <p class="text-black" data-lang-es="Reportes diarios de recepción de <br> mercancías con la frecuencia y el <br> medio que mejor se adecúe a sus <br> necesidades." data-lang-en="Daily Reports of Receipt of <br>
+                            goods with frequency and <br>
+                            environment that best suits their <br>
+                            needs.">Reportes diarios de recepción de <br> mercancías con la frecuencia y el <br> medio que mejor se adecúe a sus <br> necesidades.</p>
                     </div>
                 </div>
             </div>
@@ -236,40 +265,40 @@
 
     <section class="centered-seccion-5 terrestre" id="terrestre">
         <div class="container-seccion-5">
-            <h1 class="font-weight-bold text-center mb-2">Logística Global <label class="text-red">Especializada</label></h1>
-            <p class="text-center ">Nuestras soluciones </p>
-            <p class="text-center mb-4">Conociendo sus necesidades y ofreciendo soluciones a la medida</p>
+            <h1 class="font-weight-bold text-center mb-2" data-lang-es="Logística Global <label class='text-red'>Especializada</label>" data-lang-en="Specialized Global <label class='text-red'>Logistics</label>">Logística Global <label class="text-red">Especializada</label></h1>
+            <p class="text-center" data-lang-es="Nuestras soluciones " data-lang-en="Our solutions">Nuestras soluciones </p>
+            <p class="text-center mb-4" data-lang-es="Conociendo sus necesidades y ofreciendo soluciones a la medida" data-lang-en="Knowing your needs and offering tailor-made solutions">Conociendo sus necesidades y ofreciendo soluciones a la medida</p>
             <div class="clients-container mb-6">
                 <div class="client tooltip-container">
                     <img class="hover-image mb-2" src="src/img-grcs/aereo.png" alt="">
-                    <h3 class="font-weight-bold">Aéreos</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Aéreos" data-lang-en="Air services">Aéreos</h3>
                     <div class="tooltip-content">
-                        <h3>Aéreos</h3>
+                        <h3 data-lang-es="Aéreos" data-lang-en="Air services ">Aéreos</h3>
                         <ul style="list-style: none;">
                             <li>&bull; Standard</li>
-                            <li>&bull; Paquetería</li>
+                            <li data-lang-es="Paquetería" data-lang-en="Parcel service ">&bull; Paquetería</li>
                         </ul>
                     </div>
                 </div>
                 <div class="client tooltip-container">
                     <img class=" hover-image mb-2" src="src/img-grcs/TERR.png" alt="">
-                    <h3 class="font-weight-bold"> Terrestres</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Terrestres" data-lang-en="Terrestrial Services"> Terrestres</h3>
                     <div class="tooltip-content">
-                        <h3>Terrestes</h3>
+                        <h3 data-lang-es="Terrestres" data-lang-en="Terrestrial Services">Terrestes</h3>
                         <ul style="list-style: none;">
                             <li>&bull; FTB</li>
                             <li>&bull; LTL</li>
                             <li>&bull; FTL</li>
-                            <li>&bull; Nacionales</li>
+                            <li data-lang-es="Nacionales" data-lang-en="Domestic">&bull; Nacionales</li>
                             <li>&bull; Door to door</li>
                         </ul>
                     </div>
                 </div>
                 <div class="client tooltip-container">
                     <img class="hover-image mb-2" src="src/img-grcs/MARITIM.png" alt="">
-                    <h3 class="font-weight-bold"> Marítimos</h3>
+                    <h3 class="font-weight-bold" data-lang-es="Marítimos" data-lang-en="Maritime Services"> Marítimos</h3>
                     <div class="tooltip-content">
-                        <h3>Marítimos</h3>
+                        <h3 data-lang-es="Marítimos" data-lang-en="Maritime Services">Marítimos</h3>
                         <ul style="list-style: none;">
                             <li>&bull; LCL</li>
                             <li>&bull; FCL</li>
@@ -283,9 +312,12 @@
     <section class="centered-seccion-6 clientes-seccion" id="clientes-seccion">
         <div class="container-seccion-6" id="clientes">
             <div class="left-section">
-                <h1 class="text-black">Nuestros <label class="text-red">Clientes</label></h1>
+                <h1 class="text-black" data-lang-es="Nuestros <label class='text-red'>Clientes</label>" data-lang-en="Our <label class='text-red'>Clients</label>">Nuestros <label class="text-red">Clientes</label></h1>
                 <p class="text-with-line-clientes mb-4">
-                    <span class="mb-0">TCI tiene el privilegio de contar con clientes distinguidos en la República Mexicana, en los distintos sectores productivos del país, tales como:</span>
+                    <span class="mb-0" data-lang-es="TCI tiene el privilegio de contar con clientes distinguidos en la República Mexicana, en los distintos sectores productivos del país, tales como:" data-lang-en="TCI has the privilege of having
+                    distinguished clients in the Mexican
+                    Republic, in the different productive
+                    sectors of the country, such as:">TCI tiene el privilegio de contar con clientes distinguidos en la República Mexicana, en los distintos sectores productivos del país, tales como:</span>
                 </p>
                 <!-- <div class="acesos">
                     <button class="button-clientes btn-cotizar-red mb-4" id="clientes-2">
@@ -301,36 +333,37 @@
             </div>
             <div class="right-section right-seccion-clientes text-center">
                 <div>
-                    <img class="hover-image" src="src/img-grcs/textil.png" alt="Automobility">
-                    <h3 class="text-black">Industria textil</h3>
+                    <img class="hover-image" src="src/img-grcs/textil.png">
+                    <h3 class="text-black" data-lang-es="Industria textil" data-lang-en="Textile
+                    industry">Industria textil</h3>
                 </div>
                 <div>
-                    <img class="hover-image" src="src/img-grcs/industrial.png" alt="Aeroespacial">
-                    <h3 class="text-black">Industrial</h3>
+                    <img class="hover-image" src="src/img-grcs/industrial.png">
+                    <h3 class="text-black" data-lang-es="Industrial" data-lang-en="Industrial">Industrial</h3>
                 </div>
                 <div>
-                    <img class="hover-image" src="src/img-grcs/maderero.png" alt="Manufactura">
-                    <h3 class="text-black">Madedero</h3>
+                    <img class="hover-image" src="src/img-grcs/maderero.png">
+                    <h3 class="text-black" data-lang-es="Madedero" data-lang-en="Timber">Madedero</h3>
                 </div>
                 <div>
-                    <img class="hover-image" src="src/img-grcs/Automotriz.png" alt="MRO">
-                    <h3 class="text-black">Automotriz </h3>
+                    <img class="hover-image" src="src/img-grcs/Automotriz.png">
+                    <h3 class="text-black" data-lang-es="Automotriz" data-lang-en="Automotive">Automotriz </h3>
                 </div>
                 <div>
-                    <img class="hover-image" src="src/img-grcs/minero.png" alt="Tecnología">
-                    <h3 class="text-black">Minería</h3>
+                    <img class="hover-image" src="src/img-grcs/minero.png">
+                    <h3 class="text-black" data-lang-es="Minería" data-lang-en="Mining">Minería</h3>
                 </div>
                 <div>
-                    <img class="hover-image" src="src/img-grcs/acerero.png" alt="Salud">
-                    <h3 class="text-black">Acerero</h3>
+                    <img class="hover-image" src="src/img-grcs/acerero.png">
+                    <h3 class="text-black" data-lang-es="Acerero" data-lang-en="Steelmaker">Acerero</h3>
                 </div>
                 <div>
                     <img class="hover-image" src="src/img-grcs/agricultura.png" alt="Energía">
-                    <h3 class="text-black">Agricultura</h3>
+                    <h3 class="text-black" data-lang-es="Agricultura" data-lang-en="Agriculture">Agricultura</h3>
                 </div>
                 <div>
                     <img class="hover-image" src="src/img-grcs/alimenticio.png" alt="Perecederos">
-                    <h3 class="text-black">Alimenticio</h3>
+                    <h3 class="text-black" data-lang-es="Alimenticio" data-lang-en="Alimentary">Alimenticio</h3>
                 </div>
             </div>
         </div>
@@ -340,8 +373,10 @@
     <section class="centered-seccion-7">
         <div class="container-seccion-7 ">
             <div class="seccion-7-left mb-4">
-                <h1 class="mb-0 font-weight-bold">Puntos de operaciones</h1>
-                <p class="mb-3">Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana</p>
+                <h1 class="mb-0 font-weight-bold" data-lang-es="Puntos de operaciones" data-lang-en="Points of Operations">Puntos de operaciones</h1>
+                <p class="mb-3" data-lang-es="Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana" data-lang-en="
+                Our company has its own offices in the most important points of
+                the Mexican Republic">Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana</p>
                 <div>
                     <ul style="list-style: circle; font-size: 13px;">
                         <li>Laredo, Tx.</li>
@@ -378,19 +413,20 @@
         <div class="quote-container">
 
             <div class="form-content">
-                <h1>Forma parte de <label class="text-red">Equipo</label> </h1>
+                <h1 data-lang-es="Forma parte de <label class='text-red'>Equipo</label>" data-lang-en="Become part of <label class='text-red'>team</label>">Forma parte de <label class="text-red">Equipo</label> </h1>
                 <p class="text-with-line-clientes">
-                    <span class="mb-2">Únete a nuestro equipo de trabajo y forma parte de una empresa líder en el mercado de transporte y logística.</span>
+                    <span class="mb-2" data-lang-es="Únete a nuestro equipo de trabajo y forma parte de una empresa líder en el mercado de transporte y logística." data-lang-en="Join our team and be part of a leading
+                    company in the transport and logistics market.">Únete a nuestro equipo de trabajo y forma parte de una empresa líder en el mercado de transporte y logística.</span>
                 </p>
                 <form action="">
                     <div class="form-group
                     ">
-                        <label for="name">Nombre Completo</label>
+                        <label for="name" data-lang-es="Nombre Completo" data-lang-en="Full name">Nombre Completo</label>
                         <input type="text" class="input input-equipo" id="nombre-equipo">
                     </div>
                     <div class="form-group
                     ">
-                        <label for="name">Teléfono</label>
+                        <label for="name" data-lang-es="Teléfono" data-lang-en="Telephone">Teléfono</label>
                         <input class="input-equipo" id="number-equipo" type="number">
                     </div>
                     <div class="form-group
@@ -400,9 +436,9 @@
                     </div>
                     <div class="form-group mb-3
                     ">
-                        <label for="name">Área deseada</label>
+                        <label for="name" data-lang-es="Área deseada" data-lang-en="Desired Area">Área deseada</label>
                         <select class="input input-equipo" name="equipo-direccion" id="equipo-direccion"> 
-                            <option value="#">Selecciona una opción</option>
+                            <option value="#"  data-lang-es="Selecciona una opción" data-lang-en="Select an option">Selecciona una opción</option>
                             <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
                             <option value="Administrativo">Administrativo</option>
                             <option value="Recepción">Recepción</option>
@@ -417,7 +453,7 @@
                         </select>
                     </div>
                     <div>
-                        <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red mb-3">Enviar información</a><br>
+                        <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red mb-3" data-lang-es="Enviar información" data-lang-en="Send Information">Enviar información</a><br>
                         <label id="labelVacantes"></label>
                     </div>
 
@@ -433,11 +469,11 @@
         <div class="container-seccion-7 text-center">
             <div class="mb-4">
                 <div class="mb-4">
-                    <h1 class="mb-2 font-weight-bold text-white ">Por cielo, mar y tierra nada nos detiene.</h1>
-                    <p class="mb-1">Ofrecemos todas las vías de transporte para que tu carga siempre llegue</p>
+                    <h1 class="mb-2 font-weight-bold text-white " data-lang-es="Por cielo, mar y tierra nada nos detiene." data-lang-en="By sky, by sea and by land Nothing stops us">Por cielo, mar y tierra nada nos detiene.</h1>
+                    <p class="mb-1" data-lang-es="Ofrecemos todas las vías de transporte para que tu carga siempre llegue" data-lang-en="We offer all the transport routes so that your cargo always arrives">Ofrecemos todas las vías de transporte para que tu carga siempre llegue</p>
                 </div>
                 <div class="text-center">
-                    <a class="btn-cotizar-red  mb-4" href="about.html">
+                    <a class="btn-cotizar-red mb-4" data-lang-es="Sobre nosotros" data-lang-en="About us" href="about.html">
                         Sobre nosotros
                     </a>
                 </div>
@@ -448,8 +484,8 @@
     <section class="quote-section cotizador" id="cotizador">
         <div class="quote-container">
             <div class="form-content">
-                <h1 class="mb-0">Cotizar en línea</h1>
-                <p>Facilitando la comparación de precios y servicios a través del internet</p>
+                <h1 class="mb-0" data-lang-es="Cotizar en línea" data-lang-en="Get a quote here">Cotizar en línea</h1>
+                <p data-lang-es="Facilitando la comparación de precios y servicios a través del internet" data-lang-en="Making it easy to compare prices and services over the internet">Facilitando la comparación de precios y servicios a través del internet</p>
                 <div class="form">
                     <div class="div-form">
                         <form action="#">
@@ -508,26 +544,26 @@
                                     </select>
                                 </div> -->
                                 <div class="nombre form-group ">
-                                    <label for="name">Nombre Completo</label>
+                                    <label for="name" data-lang-es="Nombre Completo" data-lang-en="Full Name">Nombre Completo</label>
                                     <input type="text" class="input" id="nombre" value="" placeholder="Escribe a aquí">
                                 </div>
                             </div>
                             <div class="telefono-email">
                                 <div class="telefono form-group mb-2">
-                                    <label for="">Número Telefónico</label>
+                                    <label for="" data-lang-es="Nombre Completo" data-lang-en="Phone Number">Número Telefónico</label>
                                     <input class="input" id="telefono" type="number" placeholder="Escribe a aquí">
                                 </div>
                                 <div class="email form-group mb-2">
-                                    <label for="">Correo Electrónico</label>
+                                    <label for="" data-lang-es="Correo Electrónico" data-lang-en="Email">Correo Electrónico</label>
                                     <input class="input" type="email" id="correo" placeholder="Escribe a aquí">
                                 </div>
                             </div>
                             <div class="comentario form-group  mb-3">
-                                <label for="">Deja Tu Comentario</label>
+                                <label for="" data-lang-es="Deja Tu Comentario" data-lang-en="Leave a Comment Here">Deja Tu Comentario</label>
                                 <textarea name="comentario" cols="30" rows="2" id="comentario"></textarea>
                             </div>
                             <div>
-                                <button id="btnCotizar" style="cursor:pointer" class="button-cta btn-cotizar-red">Enviar solucitud</button><br><br>
+                                <button id="btnCotizar" style="cursor:pointer" data-lang-es="Enviar solucitud" data-lang-en="Send request" class="button-cta btn-cotizar-red">Enviar solucitud</button><br><br>
                                 <label id="labelCotizar"></label>
                             </div>
                         </form>
@@ -649,32 +685,23 @@
                 requestAnimationFrame(animation);
             }
 
-            // Función de desplazamiento suave
-            // function smoothScroll(targetElement, duration) {
-            //     const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-            //     const startPosition = window.scrollY;
-            //     const distance = targetPosition - startPosition;
-            //     let startTime = null;
+            const language = localStorage.getItem('selectedLanguage') || 'es'; // 'es' es el idioma por defecto
+            // Aplica el contenido basado en el idioma almacenado
+            changeLanguage(language);
 
-            //     function animation(currentTime) {
-            //         if (startTime === null) startTime = currentTime;
-            //         const timeElapsed = currentTime - startTime;
-            //         const run = ease(timeElapsed, startPosition, distance, duration);
-            //         window.scrollTo(0, run);
-            //         if (timeElapsed < duration) requestAnimationFrame(animation);
-            //     }
+            if (language === 'en') {
+                $("#btnLanguage-en").addClass("hidden");
+                $("#btnLanguage-es").removeClass("hidden");
+            }
+            if (language === 'es') {
+                $("#btnLanguage-en").removeClass("hidden");
+                $("#btnLanguage-es").addClass("hidden");
+            }
 
-            //     // Función de aceleración/desaceleración
-            //     function ease(t, b, c, d) {
-            //         t /= d / 2;
-            //         if (t < 1) return c / 2 * t * t + b;
-            //         t--;
-            //         return -c / 2 * (t * (t - 2) - 1) + b;
-            //     }
 
-            //     requestAnimationFrame(animation);
-            // }
         });
+
+
 
         $(document).ready(function() {
             $('#videoLink').magnificPopup({
@@ -690,31 +717,135 @@
                     srcAction: 'iframe_src',
                 }
             });
-
-
-
-
         });
-    </script>
 
-    <script>
-        // document.getElementById('clientes-2').addEventListener('click', function(event) {
-        //     event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        //     // document.getElementById('clientesDropdown').classList.toggle('show');
-        // });
+        const translations = {
+            "es": {
+                "serviciostext": "SERVICIOS",
+                "equipotransportetext": "EQUIPO DE TRANSPORTE",
+                "clientestext": "CLIENTES",
+                "unetealtext": "ÚNETE AL EQUIPO",
+                "cotizartext": "COTIZAR EL ENVÍO",
+                "accesclientestext": "ACCESO A CLIENTES",
+                "tituloBanner": "Con TCI, <br> llega más lejos.",
+                "tituloDosBanner": "Somos una  agencia aduanal,",
+                "tituloTresBanner": "logística y transporte",
+                "tituloCuatroBanner": "Rápido, Completo y Seguro.",
+                "experencias": "+30 años",
+                "puntos": "17 puntos",
+                "subtituloExperencias": "de experiencia",
+                "subtituloPuntos": "de operación",
+                "tituloseccionvideo": "Agencia aduanal / Transportes",
+                "subtitulo1seccionvideo": "Somos una empresa líder en el mercado de transporte y logística, con más de 30 años de experiencia en el sector.",
+                "subtitulo2seccionvideo": "Nuestro compromiso es brindar un servicio de calidad, seguro y eficiente a nuestros clientes.",
+            },
+            "en": {
+                "serviciostext": "SERVICES",
+                "equipotransportetext": "TRANSPORT TEAM",
+                "clientestext": "CLIENTS",
+                "unetealtext": "JOIN THE TEAM",
+                "cotizartext": "GET A SHIPPING QUOTE",
+                "accesclientestext": "ACCESS TO CUSTOMERS",
+                "tituloBanner": "With TCI, <br> it goes further.",
+                "tituloDosBanner": "We are a custom broker,",
+                "tituloTresBanner": "logistics and transportation",
+                "tituloCuatroBanner": "Fast, Complete and Secure.",
+                "experencias": "+30 years",
+                "puntos": "17 points of",
+                "subtituloExperencias": "of experience",
+                "subtituloPuntos": "of operation",
+                "tituloseccionvideo": "Custom broker / Transport",
+                "subtitulo1seccionvideo": "We are a leading company in the transport and logistics market, with more than 30 years of experience in the sector.",
+                "subtitulo2seccionvideo": "Our commitment is to provide a quality, safe and efficient service to our customers.",
 
-        // // Cerrar el menú si el usuario hace clic fuera de él
-        // window.addEventListener('click', function(event) {
-        //     if (!event.target.matches('#clientes-2')) {
-        //         var dropdowns = document.getElementsByClassName("dropdown-content");
-        //         for (var i = 0; i < dropdowns.length; i++) {
-        //             var openDropdown = dropdowns[i];
-        //             if (openDropdown.classList.contains('show')) {
-        //                 openDropdown.classList.remove('show');
-        //             }
-        //         }
-        //     }
-        // });
+            }
+        };
+
+        function changeLanguage(language) {
+            localStorage.setItem('selectedLanguage', language);
+
+            document.querySelectorAll('.serviciostext').forEach(element => {
+                element.innerText = translations[language].serviciostext;
+            });
+
+            document.querySelectorAll('.equipotransportetext').forEach(element => {
+                element.innerText = translations[language].equipotransportetext;
+            });
+
+            document.querySelectorAll('.clientestext').forEach(element => {
+                element.innerText = translations[language].clientestext;
+            });
+
+            document.querySelectorAll('.unetealtext').forEach(element => {
+                element.innerText = translations[language].unetealtext;
+            });
+
+            document.querySelectorAll('.cotizartext').forEach(element => {
+                element.innerText = translations[language].cotizartext;
+            });
+
+            document.querySelectorAll('.accesclientestext').forEach(element => {
+                element.innerText = translations[language].accesclientestext;
+            });
+
+            document.querySelectorAll('.tituloBanner').forEach(element => {
+                element.innerHTML = translations[language].tituloBanner;
+            });
+
+            document.querySelectorAll('.tituloDosBanner').forEach(element => {
+                element.innerText = translations[language].tituloDosBanner;
+            });
+
+            document.querySelectorAll('.tituloTresBanner').forEach(element => {
+                element.innerText = translations[language].tituloTresBanner;
+            });
+
+            document.querySelectorAll('.tituloCuatroBanner').forEach(element => {
+                element.innerText = translations[language].tituloCuatroBanner;
+            });
+
+            document.querySelectorAll('.experencias').forEach(element => {
+                element.innerText = translations[language].experencias;
+            });
+
+            document.querySelectorAll('.puntos').forEach(element => {
+                element.innerText = translations[language].puntos;
+            });
+
+            document.querySelectorAll('.subtituloExperencias').forEach(element => {
+                element.innerText = translations[language].subtituloExperencias;
+            });
+
+            document.querySelectorAll('.subtituloPuntos').forEach(element => {
+                element.innerText = translations[language].subtituloPuntos;
+            });
+
+            document.querySelectorAll('.tituloseccionvideo').forEach(element => {
+                element.innerText = translations[language].tituloseccionvideo;
+            });
+
+            document.querySelectorAll('.subtitulo1seccionvideo').forEach(element => {
+                element.innerText = translations[language].subtitulo1seccionvideo;
+            });
+
+            document.querySelectorAll('.subtitulo2seccionvideo').forEach(element => {
+                element.innerText = translations[language].subtitulo2seccionvideo;
+            });
+
+            document.querySelectorAll('[data-lang-es]').forEach(el => {
+                el.innerHTML = el.getAttribute(`data-lang-${language}`);
+            });
+
+            if (language === 'en') {
+                $("#btnLanguage-en").addClass("hidden");
+                $("#btnLanguage-es").removeClass("hidden");
+            }
+            if (language === 'es') {
+                $("#btnLanguage-en").removeClass("hidden");
+                $("#btnLanguage-es").addClass("hidden");
+            }
+
+        }
     </script>
 
     <script>

@@ -27,15 +27,48 @@
 
 <body>
     <nav>
-
         <div class="div-nav">
             <img src="src/logoblanco.png">
-            <!-- <img src="src/logo.png" alt=""> -->
+            <div class="enlaces-container">
+                <a class="enlace nav-link serviciostext" href="#servicios">SERVICIOS</a>
+                <a class="enlace nav-link equipotransportetext" href="#terrestre">EQUIPO TRANSPORTE</a>
+                <a class="enlace nav-link clientestext" href="#clientes-seccion">CLIENTES</a>
+                <a class="enlace nav-link unetealtext" href="#divEquipo">ÚNETE AL EQUIPO</a>
+                <a class="enlace nav-link cotizartext" href="#cotizador">COTIZAR EL ENVÍO</a>
+
+                <div class="acesos">
+                    <button class="button-clientes btn-cotizar-red mb-2 " id="clientes-2">
+                    <label class="accesclientestext">Acceder a clientes</label>
+                </button>
+                    <div id="caja-clientes" class="caja-clientes">
+                        <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
+                        <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
+                        <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div id="btnLanguage-en" class="language-switch c-pointer" style="margin-top: -8px;
+                font-weight: bold;" onclick="updateContent('en')">
+                    <a class="nav-link enlace-language"></a>
+                    <i class='bx bx-globe'></i> EN
+                    </a>
+                </div>
+                <div id="btnLanguage-es" class="language-switch c-pointer" style="margin-top: -8px;
+                font-weight: bold;" onclick="updateContent('es')">
+                    <a class="nav-link enlace-language "></a>
+                    <i class='bx bx-globe'></i> ES
+                    </a>
+                </div>
+            </div>
+            <i class='bx bx-menu' id="open-menu"></i>
+        </div>
+        <!-- <div class="div-nav">
+            <img src="src/logoblanco.png">
             <div class="enlaces-container">
                 <a class="enlace" href="#servicios">SERVICIOS</a>
                 <a class="enlace" href="#terrestre">EQUIPO TRANSPORTE</a>
                 <a class="enlace" href="#clientes-seccion">CLIENTES</a>
-                <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
                 <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
                 <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
                 <div class="acesos">
@@ -50,7 +83,7 @@
                 </div>
             </div>
             <i class='bx bx-menu' id="open-menu"></i>
-        </div>
+        </div> -->
 
     </nav>
 
@@ -59,25 +92,58 @@
     <div class="nav-responsive" id="nav-responsive">
         <div class="enlaces-container2">
             <a class="cerrar" id="ocultar">X</a>
+            <a class="enlace nav-link serviciostext" href="#servicios">SERVICIOS</a>
+            <a class="enlace nav-link equipotransportetext" href="#terrestre">EQUIPO DE TRANSPORTE</a>
+            <a class="enlace nav-link clientestext" href="#clientes-seccion">CLIENTES</a>
+            <a class="enlace nav-link unetealtext" href="#divEquipo">ÚNETE AL EQUIPO</a>
+            <a class="enlace nav-link mb-2 cotizartext" href="#cotizador">COTIZAR EL ENVÍO</a>
+            <div class="acesos">
+                <button class="button-clientes btn-cotizar-red mb-2" id="clientes-2">
+              <label class="accesclientestext">Acceder a clientes</label>   
+            </button>
+                <div id="caja-clientes" class="caja-clientes">
+                    <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
+                    <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
+                    <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div id="btnLanguage-en" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="updateContent('en')">
+                <a class="nav-link enlace-language"></a>
+                <i class='bx bx-globe'></i> EN
+                </a>
+            </div>
+            <div id="btnLanguage-es" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="updateContent('es')">
+                <a class="nav-link enlace-language "></a>
+                <i class='bx bx-globe'></i> ES
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="nav-responsive" id="nav-responsive">
+        <div class="enlaces-container2">
+            <a class="cerrar" id="ocultar">X</a>
             <a class="enlace" href="#servicios">SERVICIOS</a>
             <a class="enlace" href="#terrestre">EQUIPO DE TRANSPORTE</a>
             <a class="enlace" href="#clientes-seccion">CLIENTES</a>
-            <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
             <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
             <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
         </div>
-        <!-- <i class='bx bx-x' id="ocultar"></i> -->
-    </div>
+    </div> -->
 
     <!----------Landing Page----------->
     <section class="centered-seccion-4">
         <div class="container-seccion-4 ">
             <h1 class="font-weigth-bold mb-2 text-center"> Trámites de Comercio Internacional, S. C.</h1>
-            <p class="text-center mb-0">Con oficinas en el norte y sureste de México y el sur de Estados Unidos dedicada a la exportación, importación y transporte de bienes entre otros países</p>
+            <p class="text-center mb-0" data-lang-es="Con oficinas en el norte y sureste de México y el sur de Estados Unidos dedicada a la exportación, importación y transporte de bienes entre otros países" data-lang-en="With offices in the north and southeast of Mexico and the south of the United States dedicated to the export, import and transport of goods among
+            other countries">Con oficinas en el norte y sureste de México y el sur de Estados Unidos dedicada a la exportación, importación y transporte de bienes entre otros países</p>
             <!-- <p class="text-center mb-4">importación y transporte de bienes entre otros países</p> -->
             <div class="tabs-seccion-4 text-center">
                 <input type="radio" id="tab1" name="tab-group" checked>
-                <label for="tab1" class="tab-label tab-label-antecedentes font-weigth-bold">Antecedentes</label>
+                <label for="tab1" class="tab-label tab-label-antecedentes font-weigth-bold" data-lang-es="Antecedentes" data-lang-en="Background">Antecedentes</label>
 
                 <!-- <input type="radio" id="tab2" name="tab-group"> -->
                 <!-- <label for="tab2" class="tab-label">Agencia aduanal
@@ -88,14 +154,18 @@
                             <div class="service-container">
                                 <div class="service-content">
                                     <div>
-                                        <h4 class=" mb-0">TCI nace en la ciudad de Torreón Coahuila <br> en el año 1990</h4>
+                                        <h4 class=" mb-0" data-lang-es="TCI nace en la ciudad de Torreón Coahuila <br> en el año 1990." data-lang-en="TCI was founded in
+                                            Torreón, Coahuila, in <br>
+                                            1990.
+                                            ">TCI nace en la ciudad de Torreón Coahuila <br> en el año 1990</h4>
                                         <!-- <button class="btn-cotizar-red mb-4">Ver como</button> -->
                                     </div>
                                     <div>
                                         <ul class="service-details">
-                                            <h4 style="list-style: none;"> Posteriormente se crean las siguientes empresas afiliadas:</h4>
+                                            <h4 style="list-style: none;" data-lang-es="Posteriormente se crean las siguientes empresas afiliadas:" data-lang-en="Subsequently, the following affiliated companies are created:">
+                                                "> Posteriormente se crean las siguientes empresas afiliadas:</h4>
                                             <li>TCI Transportes, S.A. DE C. V</li>
-                                            <li>TCI Forwarding, Inc. (Bodegas en el paso y Laredo, Texas)</li>
+                                            <li data-lang-es="TCI Forwarding, Inc. (Bodegas en el paso y Laredo, Texas)" data-lang-en="TCI Forwarding, Inc. (warehouses in the paseo and Laredo, <br> Texas)">TCI Forwarding, Inc. (Bodegas en el paso y Laredo, Texas)</li>
                                             <li> TCI Transfers INC.</li>
                                             <li> TCI Logistics INC.</li>
                                         </ul>
@@ -151,22 +221,31 @@
             <section class="section">
                 <img class="hover-image" src="src/img-grcs/mision.png" alt="Misión">
                 <div class="content-mvv">
-                    <h2 class="mb-2">Misión</h2>
-                    <p>Ser la mejor opción para nuestros clientes a través de un servicio integral, <br> que brinde un valor agregado a sus necesidades, haciendo referencia a las mejores prácticas a nivel nacional e internacional. </p>
+                    <h2 class="mb-2" data-lang-es="Misión" data-lang-en="Mission">Misión</h2>
+                    <p data-lang-es="Ser la mejor opción para nuestros clientes a través de un servicio integral, <br> que brinde un valor agregado a sus necesidades, haciendo referencia a las mejores prácticas a nivel nacional e internacional." data-lang-en="To be the best option for our clients through an
+                        integral <br> service that provides an added value to their
+                        needs, making reference to the best national and
+                        international practices.
+                        ">Ser la mejor opción para nuestros clientes a través de un servicio integral, <br> que brinde un valor agregado a sus necesidades, haciendo referencia a las mejores prácticas a nivel nacional e internacional. </p>
                 </div>
             </section>
             <section class="section">
                 <img class="hover-image" src="src/img-grcs/vision.png" alt="Visión">
                 <div class="content-mvv">
-                    <h2 class="mb-2">Visión</h2>
-                    <p>Desarrollar los factores de calidad, productividad y competividad que conjuntamente con nuestro personal, <br> que permitan un crecimiento del negocio global entre cliente y el proveedor. </p>
+                    <h2 class="mb-2" data-lang-es="Visión" data-lang-en="Vision">Visión</h2>
+                    <p data-lang-es="Desarrollar los factores de calidad, productividad y competividad que conjuntamente con nuestro personal, <br> que permitan un crecimiento del negocio global entre cliente y el proveedor." data-lang-en="To develop the quality, productivity and
+                        competitiveness factors that together with our
+                        personnel, <br> allow a growth of the global business
+                        between the client and the supplier.">Desarrollar los factores de calidad, productividad y competividad que conjuntamente con nuestro personal, <br> que permitan un crecimiento del negocio global entre cliente y el proveedor. </p>
                 </div>
             </section>
             <section class="section">
                 <img class="hover-image" src="src/img-grcs/valores.png" alt="Valores">
                 <div class="content-mvv">
-                    <h2 class="mb-2">Valores</h2>
-                    <p> En Trámites de Comercio Internacional, S.C. por ser una sociedad civil, afirmamos y reconocemos que el elemento principal de la agencia somos el personal que colaboramos en la misma, por ello todo colaborador
+                    <h2 class="mb-2" data-lang-es="Valores" data-lang-en="Values">Valores</h2>
+                    <p data-lang-es=" En Trámites de Comercio Internacional, S.C. por ser una sociedad civil, afirmamos y reconocemos que el elemento principal de la agencia somos el personal que colaboramos en la misma, por ello todo colaborador" data-lang-en="In TCI, being a civil society, we affirm and recognize
+                    that the main element of the agency is the personnel
+                    who collaborate in it, therefore all collaborators are."> En Trámites de Comercio Internacional, S.C. por ser una sociedad civil, afirmamos y reconocemos que el elemento principal de la agencia somos el personal que colaboramos en la misma, por ello todo colaborador
                     </p>
                 </div>
             </section>
@@ -177,7 +256,7 @@
     <!-- CERTIFICACIONES -->
 
     <section class="seccion-certificado">
-        <h1 class="titulo">Nuestras <label class="text-red">certificaciones</label> </h1>
+        <h1 class="titulo" data-lang-es="Nuestras <label class='text-red'>certificaciones</label>" data-lang-en="Certifications">Nuestras <label class="text-red">certificaciones</label> </h1>
         <div class="container-certificate">
             <img class="hover-image certificate-cuadro" src="src/Logo-R026.png" alt="">
             <img class=" hover-image ctpat" src="src/Logo-CTPAT.png" alt="">
@@ -222,7 +301,7 @@
                         <div class="calle">
                             <p class="text-white font-weight-bold">Contacto</p>
                             <p class="text-white ">Calle Hilatura 291, Parque Industrial Lajat, <br> Torreón, Coah., México. C.P. 27272
-                                <br> Tel: (871) 729 75 00 <br> tci@tci.com.mx
+                                <br> Tel: (871)7297500 <br> tci@tci.com.mx
                         </div>
                     </div>
                     <div>
@@ -243,6 +322,86 @@
 
     <script src="javascript.js"></script>
 
+    <script>
+        const translations = {
+            "es": {
+                "serviciostext": "SERVICIOS",
+                "equipotransportetext": "EQUIPO DE TRANSPORTE",
+                "clientestext": "CLIENTES",
+                "unetealtext": "ÚNETE AL EQUIPO",
+                "cotizartext": "COTIZAR EL ENVÍO",
+                "accesclientestext": "ACCESO A CLIENTES",
+            },
+            "en": {
+                "serviciostext": "SERVICES",
+                "equipotransportetext": "TRANSPORT TEAM",
+                "clientestext": "CLIENTS",
+                "unetealtext": "JOIN THE TEAM",
+                "cotizartext": "GET A SHIPPING QUOTE",
+                "accesclientestext": "ACCESS TO CUSTOMERS",
+            }
+        };
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtén el idioma almacenado
+            const language = localStorage.getItem('selectedLanguage') || 'es'; // 'es' es el idioma por defecto
+
+            // Aplica el contenido basado en el idioma almacenado
+            updateContent(language);
+
+            if (language === 'en') {
+                $("#btnLanguage-en").addClass("hidden");
+                $("#btnLanguage-es").removeClass("hidden");
+            }
+            if (language === 'es') {
+                $("#btnLanguage-en").removeClass("hidden");
+                $("#btnLanguage-es").addClass("hidden");
+            }
+
+        });
+
+        function updateContent(language) {
+            localStorage.setItem('selectedLanguage', language);
+
+            document.querySelectorAll('.serviciostext').forEach(element => {
+                element.innerText = translations[language].serviciostext;
+            });
+
+            document.querySelectorAll('.equipotransportetext').forEach(element => {
+                element.innerText = translations[language].equipotransportetext;
+            });
+
+            document.querySelectorAll('.clientestext').forEach(element => {
+                element.innerText = translations[language].clientestext;
+            });
+
+            document.querySelectorAll('.unetealtext').forEach(element => {
+                element.innerText = translations[language].unetealtext;
+            });
+
+            document.querySelectorAll('.cotizartext').forEach(element => {
+                element.innerText = translations[language].cotizartext;
+            });
+
+            document.querySelectorAll('.accesclientestext').forEach(element => {
+                element.innerText = translations[language].accesclientestext;
+            });
+
+            document.querySelectorAll('[data-lang-es]').forEach(el => {
+                el.innerHTML = el.getAttribute(`data-lang-${language}`);
+            });
+
+            if (language === 'en') {
+                $("#btnLanguage-en").addClass("hidden");
+                $("#btnLanguage-es").removeClass("hidden");
+            }
+            if (language === 'es') {
+                $("#btnLanguage-en").removeClass("hidden");
+                $("#btnLanguage-es").addClass("hidden");
+            }
+        }
+    </script>
 
     <script>
         const buttonClientes = document.getElementById('clientes-2');

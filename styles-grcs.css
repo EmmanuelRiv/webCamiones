@@ -1728,3 +1728,29 @@ nav ul li a:hover {
 .text-with-line span {
     display: block;
 }
+
+.enlace-language {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.enlace-language i {
+    margin-right: 5px;
+}
+
+.enlace-language:hover {
+    color: #f0a500;
+    /* Cambia el color al pasar el mouse */
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
