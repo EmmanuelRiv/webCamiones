@@ -1317,7 +1317,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 20px;
-        max-width: 55%;
+        max-width: 100%;
     }
     .iframe-video {
         width: 230px;
@@ -1403,9 +1403,9 @@ footer {
     }
     .right-section {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        max-width: 55%;
+        max-width: 100%;
     }
     .container-seccion-6 {
         display: flex;
@@ -1415,7 +1415,15 @@ footer {
         margin-right: 10px;
     }
     .right-seccion-clientes {
-        display: none;
+        /* display: none; */
+    }
+    .centered-seccion-6 {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        align-items: center;
+        background-color: white;
+        color: #2A282A;
     }
     .container-seccion-7 {
         display: flex;
