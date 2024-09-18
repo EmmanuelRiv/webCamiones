@@ -113,7 +113,7 @@
     <header>
         <section class="quote-section seccion-1">
             <div class="banner">
-                <div class="imagen-seccion-1 image-content"></div>
+                <div id="imagenSeccion" class="imagen-seccion-1 image-content"></div>
                 <div class="texto">
                     <div>
                         <h1 class="text-red tituloBanner
@@ -845,6 +845,23 @@
             if (language === 'es') {
                 $("#btnLanguage-en").removeClass("hidden");
                 $("#btnLanguage-es").addClass("hidden");
+            }
+
+            var iframe = document.querySelector('.iframe-video');
+            if (language === 'en') {
+                iframe.src = "https://www.youtube.com/embed/mH-Yp4cye6s";
+            } else if (language === 'es') {
+                iframe.src = "https://www.youtube.com/embed/CgTPFzyh8QY"; // video en español
+            }
+
+            const imagenSeccion = document.getElementById('imagenSeccion');
+
+            if (language === 'es') {
+                // Imagen en español
+                imagenSeccion.style.backgroundImage = "url('src/img-grcs/banner-NUEVO.png')";
+            } else if (language === 'en') {
+                // Imagen en inglés
+                imagenSeccion.style.backgroundImage = "url('src/img-grcs/BANNER-NUEVO-INGLES.png')";
             }
 
         }
