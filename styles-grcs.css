@@ -939,6 +939,26 @@ input[type="radio"] {
     }
 }
 
+@media (max-width: 1286px) {
+    .btn-cotizar-red-2 {
+        background-color: #b62201;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 42px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        width: 160px;
+        border-color: transparent;
+        text-align: center;
+        text-decoration: none;
+    }
+    .button-clientes {
+        background-color: #d02802 !important;
+        font-size: 9px !important;
+    }
+}
+
 .seccion-1 {
     display: flex;
     justify-content: center;
