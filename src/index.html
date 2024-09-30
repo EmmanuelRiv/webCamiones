@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 
@@ -23,116 +25,46 @@
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Include Magnific Popup CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-
-
-
 </head>
-<!-- <style type="text/css">
-    .bx-message-square-error {
-        color: white;
-        margin-top: -8px;
-        background-color: red;
-        border-radius: 8px;
-    }
-    
-    .bx-message-square-error:hover {
-        color: red;
-        margin-top: -8px;
-        background-color: white;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    #occce {
-        top: -358px;
-        position: absolute;
-        left: -108px;
-        background-color: crimson;
-        color: white;
-    }
-    
-    #occce a {
-        color: #4080ff;
-    }
-    
-    #quejas a {
-        color: #4080ff;
-    }
-    
-    .certificate-cuadro:nth-child(1) {
-        width: 140px;
-    }
-    
-    .container-politica {
-        display: block;
-        width: 60%;
-        padding-top: 30px;
-        margin: auto;
-        align-items: center;
-        padding-bottom: 35px;
-        border-radius: 20px;
-        padding: 38px;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    }
-    
-    .seccion-certificado {
-        margin-bottom: 130px;
-    }
-    
-    .container-flex {
-        margin: 170px auto;
-        text-align: center;
-    }
-</style> -->
-
-
 
 <body>
-    <!-- <div class="remodelacion">
-    <p>
-        <i class='bx bxs-info-circle'></i>El AVC reemplaza al DODA o PITA
-        Con la entrada en vigor del Decreto que prevé diversas disposiciones relacionadas con la Agencia Nacional de Aduanas de México (ANAM) , esta contará con su propia infraestructura tecnológica, de tal manera, que en vez del PITA y el DODA, utilizará el AVC, cuyo objetivo será la simplificación del despacho aduanero de las mercancías.
-        <a href="https://www.linkedin.com/company/tci-agencia-aduanal-transporte">
-        Linkedin.</a> 
-    </p>
-    </div>  -->
-
-    <!-- NBVAR GERALDINE -->
-    <!-- <div class="div-encabezado-promocional">
-
-        <div class="text-encabezado-promocional">
-            <div>
-                <span class="font-weight-bold"> <i class="fas fa-globe"></i> Agencia adunal / Transportes</span>
-                <span>es una marca impulsada por el mundo</span>
-            </div>
-            <div>
-                <div class="dropdown">
-                    <button class="dropbtn">ES 
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                    <ul class="dropdown-content">
-                        <li><a class="enlace" href="#">ES</a></li>
-                        <li><a class="enlace" href="#">EN</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <nav>
 
         <div class="div-nav">
             <img src="src/logoblanco.png">
-            <!-- <img src="src/logo.png" alt=""> -->
             <div class="enlaces-container">
-                <a class="enlace" href="#servicios">SERVICIOS</a>
-                <a class="enlace" href="#terrestre">EQUIPO TRANSPORTE</a>
-                <a class="enlace" href="#clientes-seccion">CLIENTES</a>
-                <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
-                <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
-                <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
+                <a class="enlace nav-link serviciostext" href="#servicios">SERVICIOS</a>
+                <a class="enlace nav-link equipotransportetext" href="#terrestre">EQUIPO TRANSPORTE</a>
+                <a class="enlace nav-link clientestext" href="#clientes-seccion">CLIENTES</a>
+                <a class="enlace " data-lang-es="SOBRE NOSOTROS" data-lang-en="ABOUT US" href="about.html">SOBRE NOSOTROS</a>
+                <a class="enlace nav-link unetealtext" href="#divEquipo">ÚNETE AL EQUIPO</a>
+                <a class="enlace nav-link cotizartext" href="#cotizador">COTIZAR EL ENVÍO</a>
+
+                <div class="acesos">
+                    <button class="button-clientes btn-cotizar-red btn-cotizar-red-2 mb-2 " id="clientes-2">
+                    <label class="accesclientestext">Acceder a clientes</label>
+                </button>
+                    <div id="caja-clientes" class="caja-clientes">
+                        <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
+                        <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
+                        <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div id="btnLanguage-en" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('en')">
+                <a class="nav-link enlace-language"></a>
+                <i class='bx bx-globe'></i> EN
+                </a>
+            </div>
+            <div id="btnLanguage-es" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('es')">
+                <a class="nav-link enlace-language "></a>
+                <i class='bx bx-globe'></i> ES
+                </a>
             </div>
             <i class='bx bx-menu' id="open-menu"></i>
         </div>
-
     </nav>
 
     <!-- TERMINA GERALDINE -->
@@ -140,21 +72,75 @@
     <div class="nav-responsive" id="nav-responsive">
         <div class="enlaces-container2">
             <a class="cerrar" id="ocultar">X</a>
-            <a class="enlace" href="#servicios">SERVICIOS</a>
-            <a class="enlace" href="#terrestre">EQUIPO DE TRANSPORTE</a>
-            <a class="enlace" href="#clientes-seccion">CLIENTES</a>
-            <!-- <a class="enlace" href="#empresa">EMPRESA LIDER</a> -->
-            <a class="enlace" href="#divEquipo">ÚNETE AL EQUIPO</a>
-            <a class="enlace" href="#cotizador">COTIZAR EL ENVÍO</a>
+            <a class="enlace nav-link serviciostext" href="#servicios">SERVICIOS</a>
+            <a class="enlace nav-link equipotransportetext" href="#terrestre">EQUIPO DE TRANSPORTE</a>
+            <a class="enlace nav-link clientestext" href="#clientes-seccion">CLIENTES</a>
+            <a class="enlace" data-lang-es="SOBRE NOSOTROS" data-lang-en="ABOUT US" href="about.html">SOBRE NOSOTROS</a>
+            <a class="enlace nav-link unetealtext" href="#divEquipo">ÚNETE AL EQUIPO</a>
+            <a class="enlace nav-link mb-2 cotizartext" href="#cotizador">COTIZAR EL ENVÍO</a>
+            <div class="acesos">
+                <button class="button-clientes btn-cotizar-red btn-cotizar-red-2 mb-2" id="clientes-2">
+              <label class="accesclientestext">Acceder a clientes</label>   
+            </button>
+                <div id="caja-clientes" class="caja-clientes">
+                    <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
+                    <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
+                    <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
+                </div>
+            </div>
         </div>
-        <!-- <i class='bx bx-x' id="ocultar"></i> -->
+        <div class="text-center">
+            <div id="btnLanguage-en" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('en')">
+                <a class="nav-link enlace-language"></a>
+                <i class='bx bx-globe'></i> EN
+                </a>
+            </div>
+            <div id="btnLanguage-es" class="language-switch c-pointer" style="margin-top: -8px;
+            font-weight: bold;" onclick="changeLanguage('es')">
+                <a class="nav-link enlace-language "></a>
+                <i class='bx bx-globe'></i> ES
+                </a>
+            </div>
+        </div>
+        <!-- <div class="language-switch">
+            <a href="#" class="nav-link enlace-language">
+                <i class='bx bx-globe'></i> EN
+            </a>
+        </div> -->
     </div>
 
     <!----------Landing Page----------->
 
     <header>
         <section class="quote-section seccion-1">
-            <div class="quote-container-seccion-1">
+            <div class="banner">
+                <div id="imagenSeccion" class="imagen-seccion-1 image-content"></div>
+                <div class="texto">
+                    <div>
+                        <h1 class="text-red tituloBanner
+                        font-weight-bold">Con TCI, <br> llega más lejos.</h1>
+                        <h2 class="text-black tituloDosBanner">Somos una <label class="font-weight-bold">agencia aduanal,</label> </h2>
+                        <h2 class="text-black
+                        font-weight-bold mb-3 tituloTresBanner">logística y de transporte</h2>
+                        <p class="text-black mb-2 tituloCuatroBanner
+                        ">Rápido, completo y seguro.</p>
+                        <div class="mb-4">
+                            <section class="stats-section">
+                                <div class="stat">
+                                    <h3 class="text-red experencias">+30 años</h3>
+                                    <p class="subtituloExperencias">de experiencia</p>
+                                </div>
+                                <div class="stat">
+                                    <h3 class="text-red puntos">17 puntos</h3>
+                                    <p class="subtituloPuntos">de operación</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="quote-container-seccion-1">
                 <div class="image-content ">
                 </div>
                 <div class="div-container-seccion-1 seccion-1-container">
@@ -166,10 +152,6 @@
                     <p class="text-black mb-4
                     ">Rápido, Completo y Seguro.</p>
                     <br>
-                    <!-- <p class="text-black">Más de 30 años nos respaldan</p> -->
-                    <!-- <p class="text-black mb-3
-                    ">La importación , exportación de mercancía más segura.</p> -->
-                    <!-- <a class="btn-cotizar-red mb-2" href="#cotizador">Cotizar mi envio</a> -->
                     <div class="mb-4">
                         <section class="stats-section">
                             <div class="stat">
@@ -184,7 +166,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </section>
     </header>
     <!----------- TERMINA LANDING PAGE --->
@@ -193,160 +175,153 @@
         <div class="container-seccion-video">
             <div class="seccion-video-left">
                 <div class="div-container-seccion-1">
-                    <!-- <h1 class="text-white
-                    font-weight-bold">Video de produccion</h1> -->
-                    <h1 class="text-white
-                    font-weight-bold mb-4">Agencia aduanal / Transportes</h1>
+                    <h1 class="text-red
+                    font-weight-bold mb-4 tituloseccionvideo">Agencia aduanal / Transportes</h1>
                     <p class="text-with-line">
-                        Somos una empresa líder en el mercado de transporte y logística,<br> con más de 30 años de experiencia en el sector<br> Nuestro compromiso es brindar un servicio de calidad, seguro y eficiente a nuestros clientes.
+                        <span class="mb-0 subtitulo1seccionvideo">Somos una empresa líder en el mercado de transporte y logística, con más de 30 años de experiencia en el sector.</span>
+                        <span class="mb-0 subtitulo2seccionvideo">Nuestro compromiso es brindar un servicio de calidad, seguro y eficiente a nuestros clientes.</span>
                     </p>
                 </div>
             </div>
             <div class="seccion-video-right">
-                <a id="videoLink" href="https://www.youtube.com/watch?v=VIDEO_ID">
-                    <img src="src/img-grcs/video.png" alt="Video Thumbnail" class="video-img-seccion-2">
-                </a>
+                <iframe class="iframe-video" src="https://www.youtube.com/embed/CgTPFzyh8QY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
 
-    <section class="centered-seccion-3" id="servicios">
-        <div class="container-seccion-3 text-center">
-            <h1 class=" title-seccion-3 font-weight-bold mb-0">Nuestro <label class="text-red">Objetivo</label> </h1>
-            <h6 class=" title-seccion-3 font-weight-bold mb-4"> Ofrecer un servicio integral a nuestros clientes</h6>
+    <section class="centered-seccion-3 servicios" id="servicios">
+        <div class="container-seccion-3 ">
+            <h1 class=" title-seccion-3 text-center font-weight-bold mb-0 tituloseccionservicios" data-lang-es="Nuestro <label class='text-red'>Objetivo</label>" data-lang-en="Our <label class='text-red'>Goal</label>">Nuestro <label class="text-red">Objetivo</label> </h1>
+            <h6 class=" title-seccion-3 text-center font-weight-bold mb-4 subtituloseccionservicios" data-lang-es="Ofrecer un servicio integral a nuestros clientes" data-lang-en="To offer a comprehensive service to our customers"> Ofrecer un servicio integral a nuestros clientes</h6>
             <div class="steps-centered-seccion-3 mb-4">
                 <div>
-                    <img class="mb-2 img-centered-seccion-3" src="src/img-grcs/Un solo centro de información.png" alt="">
-                    <h3 class="font-weight-bold">Centro de información.</h3>
-                </div>
-                <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Asesoría legal.png" alt="">
-                    <h3 class="font-weight-bold">Asesoría legal.</h3>
-                </div>
+                    <img class="mb-2 img-centered-seccion-3 hover-image" src="src/img-grcs/Un solo centro de información.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Centro de información" data-lang-en="Main center">Centro de información</h3>
+                    <div>
+                        <p class="text-black" data-lang-es="Un solo centro de información <br> donde un ejecutivo de cuenta <br> brindará toda la información <br> necesaria, que representa una <br> disminución considerable en <br> tiempos de respuesta." data-lang-en="A single information center
+                            where an account executive will
+                            provide all the information
+                            necessary, which represents a
+                            considerable decrease in
+                            response times.
+                            ">
+                            Un solo centro de información <br> donde un ejecutivo de cuenta <br> brindará toda la información <br> necesaria, que representa una <br> disminución considerable en <br> tiempos de respuesta.
+                        </p>
 
-                <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Almacenaje y distribución en nuestras bodegas del lado americano.png" alt="">
-                    <h3 class="font-weight-bold"> Almacenaje en bodegas.</h3>
-                </div>
-            </div>
-            <div class="steps-centered-seccion-3 mb-4">
-                <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Línea de transporte propia,.png" alt="">
-                    <h3 class="font-weight-bold"> Linea de transporte propia.</h3>
-                </div>
-                <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Notificaciones diarias.png" alt="">
-                    <h3 class="font-weight-bold"> Notificaciones diarias.</h3>
-                </div>
-                <div>
-                    <img class="img-centered-seccion-3 mb-2" src="src/img-grcs/Reportes y Expediente Digital.png" alt="">
-                    <h3 class="font-weight-bold"> Exportacion y Importacion.</h3>
-                </div>
-            </div>
-            <div>
-                <a class="btn-cotizar mb-4" href="#cotizador">Cotizar mi envio</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="centered-seccion-4">
-        <div class="container-seccion-4 ">
-            <h1 class="font-weigth-bold mb-2 text-center"> Trámites de Comercio Internacional, S. C.</h1>
-            <p class="text-center mb-0">Con oficinas en el norte y sureste de México y el sur de Estados Unidos dedicada a la exportación, importación y transporte de bienes entre otros países</p>
-            <!-- <p class="text-center mb-4">importación y transporte de bienes entre otros países</p> -->
-            <div class="tabs-seccion-4 text-center">
-                <input type="radio" id="tab1" name="tab-group" checked>
-                <label for="tab1" class="tab-label tab-label-antecedentes font-weigth-bold">Antecedentes</label>
-
-                <!-- <input type="radio" id="tab2" name="tab-group"> -->
-                <!-- <label for="tab2" class="tab-label">Agencia aduanal
-                </label> -->
-                <div class="tab-content">
-                    <div id="content1" class="content text-start">
-                        <section class="service-section">
-                            <div class="service-container">
-                                <div class="service-content">
-                                    <div>
-                                        <h4 class=" mb-0">TCI nace en la ciudad de Torreón Coahuila <br> en el año 1990</h4>
-                                        <!-- <button class="btn-cotizar-red mb-4">Ver como</button> -->
-                                    </div>
-                                    <div>
-                                        <ul class="service-details">
-                                            <h4 style="list-style: none;"> Posteriormente se crean las siguientes empresas afiliadas:</h4>
-                                            <li>TCI Transportes, S.A. DE C. V</li>
-                                            <li>TCI Forwarding, Inc. (Bodegas en el paso y Laredo, Texas)</li>
-                                            <li> TCI Transfers INC.</li>
-                                            <li> TCI Logistics INC.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                     </div>
-                    <!-- <div id="content2" class="content  text-start">
-                        <section class="service-section">
-                            <div class="service-container">
-                                <div class="service-content">
-                                    <div>
-                                        <h2 class=" mb-2">Todo para tu flete terreste </h2>
-                                        <button class="btn-cotizar-red mb-4">Cotizar mi flete</button>
-                                    </div>
-                                    <div>
-                                        <ul class="service-details">
-                                            <li style="list-style: none;" class="mb-2">Una Agencia Aduanal Mexicana, con más de 30 años de experiencia en el servicio.</li>
-                                            <li>3.5 toneladas</li>
-                                            <li>7 toneladas</li>
-                                            <li>Caja refrigerada</li>
-                                            <li>Caja seca</li>
-                                            <li>Pickup 600kgs</li>
-                                            <li>Plataformas</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div> -->
+                </div>
+                <div>
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Asesoría legal.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Asesoría legal" data-lang-en="Legal consultation">Asesoría legal</h3>
+                    <div>
+                        <p class="text-black" data-lang-es="Asesoría legal a través de nuestro <br> personal altamente calificado <br> con una amplia experiencia en <br> operaciones de comercio." data-lang-en="Legal advice through our <br> highly qualified staff with <br> extensive experience in <br> trade operations.">Asesoría legal a través de nuestro <br> personal altamente calificado <br> con una amplia experiencia en <br> operaciones de comercio.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Almacenaje y distribución en nuestras bodegas del lado americano.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Almacenaje en bodegas" data-lang-en="Storage in warehouses"> Almacenaje en bodegas</h3>
+                    <div>
+                        <p class="text-black" data-lang-es="Almacenaje en nuestras bodegas <br> del lado americano sin costo para <br> embarques de importación." data-lang-en="Storage in our warehouses <br> on
+                            the American side at no cost to <br>
+                            import shipments.">Almacenaje en nuestras bodegas <br> del lado americano sin costo para <br> embarques de importación.</p>
+                    </div>
                 </div>
             </div>
-
+            <div class="steps-centered-seccion-3 mb-4">
+                <div>
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Línea de transporte propia,.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Línea de transporte propia" data-lang-en="Own transport line">Línea de transporte propia</h3>
+                    <div>
+                        <p class="text-black" data-lang-es="Línea de transporte propia <br> contando con una amplia flotilla <br> de tractocamiones, plataformas, <br> cajas, camiones y camionetas." data-lang-en="Own transport line with a large <br>
+                        fleet tractor trucks, flatbeds,<br>
+                        boxes, trucks and vans.
+                        ">Línea de transporte propia <br> contando con una amplia flotilla <br> de tractocamiones, plataformas, <br> cajas, camiones y camionetas.</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Notificaciones diarias.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Notificaciones diarias" data-lang-en="Daily notifications"> Notificaciones diarias</h3>
+                    <div>
+                        <p class="text-black" data-lang-es="El enlace con el resto de nuestras <br> oficinas en otros puntos del país <br> por medio de líneas privadas <br> logrando una eficiente comunicación <br> a nuestros clientes." data-lang-en="The link to the rest of our offices <br>
+                            in other parts of the country via <br>
+                            private lines achieving efficient <br>
+                            communication to our customers.
+                            ">El enlace con el resto de nuestras <br> oficinas en otros puntos del país <br> por medio de líneas privadas <br> logrando una eficiente comunicación <br> a nuestros clientes.</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="img-centered-seccion-3 hover-image mb-2" src="src/img-grcs/Reportes y Expediente Digital.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es=" Exportación e Importación" data-lang-en="Export & Import"> Exportación e Importación</h3>
+                    <div>
+                        <p class="text-black" data-lang-es="Reportes diarios de recepción de <br> mercancías con la frecuencia y el <br> medio que mejor se adecúe a sus <br> necesidades." data-lang-en="Daily Reports of Receipt of <br>
+                            goods with frequency and <br>
+                            environment that best suits their <br>
+                            needs.">Reportes diarios de recepción de <br> mercancías con la frecuencia y el <br> medio que mejor se adecúe a sus <br> necesidades.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="centered-seccion-5" id="terrestre">
+    <section class="centered-seccion-5 terrestre" id="terrestre">
         <div class="container-seccion-5">
-            <h1 class="font-weight-bold text-center mb-2">Logística Global <label class="text-red">Especializada</label></h1>
-            <p class="text-center ">Nuestras soluciones </p>
-            <p class="text-center mb-4">Conociendo sus necesidades y ofreciendo soluciones a la medida</p>
+            <h1 class="font-weight-bold text-center mb-2" data-lang-es="Logística global <label class='text-red'>especializada</label>" data-lang-en="Specialized Global <label class='text-red'>Logistics</label>">Logística global <label class="text-red">especializada</label></h1>
+            <p class="text-center" data-lang-es="Nuestras soluciones " data-lang-en="Our solutions">Nuestras soluciones </p>
+            <p class="text-center mb-4" data-lang-es="Conociendo sus necesidades y ofreciendo soluciones a la medida" data-lang-en="Knowing your needs and offering tailor-made solutions">Conociendo sus necesidades y ofreciendo soluciones a la medida</p>
             <div class="clients-container mb-6">
-                <div class="client">
-                    <img class=" mb-2" src="src/img-grcs/aereo.png" alt="">
-                    <h3 class="font-weight-bold">Aéreos</h3>
+                <div class="client tooltip-container">
+                    <img class="hover-image mb-2" src="src/img-grcs/aereo.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Aéreos" data-lang-en="Air services">Aéreos</h3>
+                    <div class="tooltip-content">
+                        <h3 data-lang-es="Aéreos" data-lang-en="Air services">Aéreos</h3>
+                        <ul style="list-style: none;">
+                            <li>&bull; Standard</li>
+                            <li data-lang-es="&bull; Paquetería" data-lang-en="&bull; Parcel service">&bull; Paquetería</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="client">
-                    <img class="mb-2" src="src/img-grcs/TERR.png" alt="">
-                    <h3 class="font-weight-bold"> Terrestres</h3>
+                <div class="client tooltip-container">
+                    <img class=" hover-image mb-2" src="src/img-grcs/TERR.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Terrestres" data-lang-en="Terrestrial services"> Terrestres</h3>
+                    <div class="tooltip-content">
+                        <h3 data-lang-es="Terrestres" data-lang-en="Terrestrial services">Terrestes</h3>
+                        <ul style="list-style: none;">
+                            <li>&bull; FTB</li>
+                            <li>&bull; LTL</li>
+                            <li>&bull; FTL</li>
+                            <li data-lang-es="&bull; Nacionales" data-lang-en="&bull; Domestic">&bull; Nacionales</li>
+                            <li>&bull; Door to door</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="client">
-                    <img class="mb-2" src="src/img-grcs/MARITIM.png" alt="">
-                    <h3 class="font-weight-bold"> Maritimos</h3>
+                <div class="client tooltip-container">
+                    <img class="hover-image mb-2" src="src/img-grcs/MARITIM.png" alt="">
+                    <h3 class="font-weight-bold" data-lang-es="Marítimos" data-lang-en="Maritime services"> Marítimos</h3>
+                    <div class="tooltip-content">
+                        <h3 data-lang-es="Marítimos" data-lang-en="Maritime services">Marítimos</h3>
+                        <ul style="list-style: none;">
+                            <li>&bull; LCL</li>
+                            <li>&bull; FCL</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="text-center">
-                <a class="btn-cotizar mb-4" href="#cotizador">
-                        Cotizar mi envio
-                </a>
-            </div>
-
         </div>
     </section>
 
-    <section class="centered-seccion-6" id="clientes-seccion">
+    <section class="centered-seccion-6 clientes-seccion" id="clientes-seccion">
         <div class="container-seccion-6" id="clientes">
             <div class="left-section">
-                <h1 class="text-black">Nuestros <label class="text-red">Clientes</label></h1>
-                <p class="mb-4"> TCI tiene el privilegio de contar con clientes distinguidos en la República</p>
-                <p class="mb-4"> Mexicana, en los distintos sectores productivos del país tales como:</p>
-                <div class="acesos">
+                <h1 class="text-black" data-lang-es="Nuestros <label class='text-red'>Clientes</label>" data-lang-en="Our <label class='text-red'>Clients</label>">Nuestros <label class="text-red">Clientes</label></h1>
+                <p class="text-with-line-clientes mb-4">
+                    <span class="mb-0" data-lang-es="TCI tiene el privilegio de contar con clientes distinguidos en la República Mexicana, en los distintos sectores productivos del país, tales como:" data-lang-en="TCI has the privilege of having
+                    distinguished clients in the Mexican
+                    Republic, in the different productive
+                    sectors of the country, such as:">TCI tiene el privilegio de contar con clientes distinguidos en la República Mexicana, en los distintos sectores productivos del país, tales como:</span>
+                </p>
+                <!-- <div class="acesos">
                     <button class="button-clientes btn-cotizar-red mb-4" id="clientes-2">
                     Acceder a clientes
                    </button>
@@ -356,61 +331,54 @@
                         <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
                         <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
                     </div>
-                </div>
-                <!-- <div>
-                    <buttaon class="btn-cotizar-red mb-4" id="clientes-2">Acceder a clientes</button>
-                </div>
-                <div id="caja-clientes" class="caja-clientes">
-                    <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
-                    <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
-                    <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
                 </div> -->
             </div>
-            <div class="right-section text-center">
+            <div class="right-section right-seccion-clientes text-center">
                 <div>
-                    <img src="src/img-grcs/textil.png" alt="Automobility">
-                    <h3 class="text-black">Industria textil</h3>
+                    <img class="hover-image" src="src/img-grcs/textil.png">
+                    <h3 class="text-black" data-lang-es="Industria textil" data-lang-en="Textile
+                    industry">Industria textil</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/industrial.png" alt="Aeroespacial">
-                    <h3 class="text-black">Industrial</h3>
+                    <img class="hover-image" src="src/img-grcs/industrial.png">
+                    <h3 class="text-black" data-lang-es="Industrial" data-lang-en="Industrial">Industrial</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/maderero.png" alt="Manufactura">
-                    <h3 class="text-black">Madedero</h3>
+                    <img class="hover-image" src="src/img-grcs/maderero.png">
+                    <h3 class="text-black" data-lang-es="Madedero" data-lang-en="Timber">Madedero</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/Automotriz.png" alt="MRO">
-                    <h3 class="text-black">Automotriz </h3>
+                    <img class="hover-image" src="src/img-grcs/Automotriz.png">
+                    <h3 class="text-black" data-lang-es="Automotriz" data-lang-en="Automotive">Automotriz </h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/minero.png" alt="Tecnología">
-                    <h3 class="text-black">Mineria</h3>
+                    <img class="hover-image" src="src/img-grcs/minero.png">
+                    <h3 class="text-black" data-lang-es="Minería" data-lang-en="Mining">Minería</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/acerero.png" alt="Salud">
-                    <h3 class="text-black">Acerero</h3>
+                    <img class="hover-image" src="src/img-grcs/acerero.png">
+                    <h3 class="text-black" data-lang-es="Acerero" data-lang-en="Steelmaker">Acerero</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/agricultura.png" alt="Energía">
-                    <h3 class="text-black">Agricultura</h3>
+                    <img class="hover-image" src="src/img-grcs/agricultura.png" alt="Energía">
+                    <h3 class="text-black" data-lang-es="Agricultura" data-lang-en="Agriculture">Agricultura</h3>
                 </div>
                 <div>
-                    <img src="src/img-grcs/alimenticio.png" alt="Perecederos">
-                    <h3 class="text-black">Alimenticio</h3>
+                    <img class="hover-image" src="src/img-grcs/alimenticio.png" alt="Perecederos">
+                    <h3 class="text-black" data-lang-es="Alimenticio" data-lang-en="Alimentary">Alimenticio</h3>
                 </div>
             </div>
         </div>
     </section>
-
-
     <section class="centered-seccion-7">
         <div class="container-seccion-7 ">
             <div class="seccion-7-left mb-4">
-                <h1 class="mb-0 font-weight-bold"><label class="text-red">Puntos</label> de operaciones</h1>
-                <p class="mb-2">Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana</p>
+                <h1 class="mb-0 font-weight-bold" data-lang-es="Puntos de operaciones" data-lang-en="Points of Operations">Puntos de operaciones</h1>
+                <p class="mb-3" data-lang-es="Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana" data-lang-en="
+                Our company has its own offices in the most important points of
+                the Mexican Republic">Nuestra empresa cuenta con oficinas propias en los puntos más importantes de la República Mexicana</p>
                 <div>
-                    <ul style="list-style: circle;">
+                    <ul style="list-style: circle; font-size: 13px;">
                         <li>Laredo, Tx.</li>
                         <li> El Paso, Tx.
                         </li>
@@ -433,115 +401,30 @@
                     </ul>
                 </div>
             </div>
-            <div class="seccion-7-right">
+            <div class="seccion-7-right text-center">
                 <div class="mapa-tci">
-                    <img src="src/img-grcs/MAPA-2 .png" class="mapa-img" alt="Mapa de operaciones">
+                    <img src="src/img-grcs/mapa-nuevo-2.png" class="mapa-img" alt="Mapa de operaciones">
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="quote-section" id="cotizador">
-        <div class="quote-container">
-            <div class="form-content">
-                <h1 class="mb-0">Cotizar en línea</h1>
-                <p>Facilitando la comparación de precios y servicios a través del internet</p>
-                <form action="">
-                    <div style="display: flex;     justify-content: space-between;" class="mb-2">
-                        <div class="form-group">
-                            <label for="name">Tipo de mercancía</label>
-                            <input type="text" id="mercancia" placeholder="Escribe a aquí">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Peso</label>
-                            <input type="number" min="0" class="input" id="peso" placeholder="Ingresa el peso aquí">
-                        </div>
-                    </div>
-                    <div class="origen-destino">
-                        <div style="display: flex; justify-content: space-between;" class="mb-2">
-                            <div class="origen form-group">
-                                <label>Origen (País/Estado)</label>
-                                <input type="text" class="input" name="Estado" placeholder="Escribe el origen aquí" id="selectStates1">
-                            </div>
-                            <div class="form-group">
-                                <label for="selectCities1">Ciudad</label>
-                                <input type="text" class="input" name="ciudad" placeholder="Escribe la ciudad aquí" id="selectCities1">
-                            </div>
-                        </div>
-                        <div style="display: flex; justify-content: space-between;" class="mb-2">
-                            <div class="destino form-group">
-                                <label>Destino (País/Estado)</label>
-                                <input type="text" class="input" name="Estado-destino" placeholder="Escribe el destino aquí" id="selectStates2">
-                            </div>
-                            <div class="form-group">
-                                <label for="selectCities2">Ciudad</label>
-                                <input type="text" class="input" name="ciudad-destino" placeholder="Escribe la ciudad aquí" id="selectCities2">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="unidad-embalaje">
-                        <div style="display: flex; justify-content: space-between;" class="mb-2">
-                            <div class="unidad form-group">
-                                <label for="mercancia">Tipo de Unidad</label>
-                                <input class="input" type="text" name="Unidad" id="unidad" placeholder="Escribe la unidad aquí">
-                            </div>
-                            <div class="embalaje form-group">
-                                <label for="Embalaje">Tipo de Embalaje</label>
-                                <input class="input" type="text" name="Embalaje" id="embalaje" placeholder="Escribe el emblaje aquí">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="transbordo-nombre">
-                        <div class="transbordo form-group">
-                            <label for="mercancia">Transbordo</label>
-                            <select class="input" name="Transbordo" id="transbordo">
-                                <option value="#">Selecciona una opción</option>
-                                <option value="si">SÍ</option>
-                                <option value="no">NO</option>
-                            </select>
-                        </div>
-                        <div class="nombre form-group">
-                            <label for="name">Nombre Completo</label>
-                            <input type="text" class="input" id="nombre" value="">
-                        </div>
-                    </div>
-                    <div class="telefono-email">
-                        <div class="telefono form-group">
-                            <label for="">Número Telefónico</label>
-                            <input class="input" id="telefono" type="number">
-                        </div>
-                        <div class="email form-group">
-                            <label for="">Correo Electrónico</label>
-                            <input class="input" type="email" id="correo">
-                        </div>
-                    </div>
-                    <div class="comentario form-group  mb-3">
-                        <label for="">Deja Tu Comentario</label>
-                        <textarea name="comentario" cols="30" rows="2" id="comentario"></textarea>
-                    </div>
-                    <div>
-                        <button id="btnCotizar" style="cursor:pointer" class="button-cta btn-cotizar-red">Enviar solucitud</button><br><br>
-                        <label id="labelCotizar"></label>
-                    </div>
-                </form>
-            </div>
-            <div class="image-content">
-                <img src="src/img-grcs/MOCKUP TABLET.png" width="75%" alt="Cotizador">
+    <section>
+        <div class="container-seccion-7  text-center" style="background-color: white;">
+            <div class="mb-4">
+                <div class="mb-4">
+                </div>
             </div>
         </div>
     </section>
-
-
     <section class="centered-seccion-7 seccion-nosotros ">
         <div class="container-seccion-7 text-center">
             <div class="mb-4">
                 <div class="mb-4">
-                    <h1 class="mb-2 font-weight-bold text-white ">Por cielo, mar y tierra nada nos detiene.</h1>
-                    <p class="mb-1">Ofrecemos todas las vías de transporte para que tu carga siempre llegue</p>
+                    <h1 class="mb-2 font-weight-bold text-white " data-lang-es="Por cielo, mar y tierra nada nos detiene." data-lang-en="By sky, by sea and by land Nothing stops us">Por cielo, mar y tierra nada nos detiene.</h1>
+                    <p class="mb-1" data-lang-es="Ofrecemos todas las vías de transporte para que tu carga siempre llegue" data-lang-en="We offer all the transport routes so that your cargo always arrives">Ofrecemos todas las vías de transporte para que tu carga siempre llegue</p>
                 </div>
                 <div class="text-center">
-                    <a class="btn-cotizar-red  mb-4" href="about.html">
+                    <a class="btn-cotizar-red mb-4" data-lang-es="Sobre nosotros" data-lang-en="About us" href="about.html">
                         Sobre nosotros
                     </a>
                 </div>
@@ -549,34 +432,36 @@
         </div>
     </section>
 
-    <section class="quote-section" id="divEquipo">
+    <section class="quote-section-equipo divEquipo" id="divEquipo">
         <div class="quote-container">
 
             <div class="form-content">
-                <h1>Forma parte de <label class="text-red">Equipo</label> </h1>
-                <p>Únete a nuestro equipo de trabajo y forma parte de una
-                    <br> empresa líder en el mercado de transporte y logística.</p>
+                <h1 data-lang-es="Forma parte del <label class='text-red'>equipo</label>" data-lang-en="Become part of <label class='text-red'>team</label>">Forma parte del <label class="text-red">equipo</label> </h1>
+                <p class="text-with-line-clientes">
+                    <span class="mb-2" data-lang-es="Únete a nuestro equipo de trabajo y forma parte de una empresa líder en el mercado de transporte y logística." data-lang-en="Join our team and be part of a leading
+                    company in the transport and logistics market.">Únete a nuestro equipo de trabajo y forma parte de una empresa líder en el mercado de transporte y logística.</span>
+                </p>
                 <form action="">
                     <div class="form-group
                     ">
-                        <label for="name">Nombre Completo</label>
+                        <label for="name" data-lang-es="Nombre completo" data-lang-en="Full name">Nombre completo</label>
                         <input type="text" class="input input-equipo" id="nombre-equipo">
                     </div>
                     <div class="form-group
                     ">
-                        <label for="name">Teléfono</label>
+                        <label for="name" data-lang-es="Teléfono" data-lang-en="Telephone">Teléfono</label>
                         <input class="input-equipo" id="number-equipo" type="number">
                     </div>
                     <div class="form-group
                     ">
-                        <label for="name">E-mail</label>
+                        <label for="name" data-lang-es="Correo electrónico" data-lang-en="Email">Correo electrónico</label>
                         <input class="input-equipo" id="email-equipo" type="email" name="email">
                     </div>
                     <div class="form-group mb-3
                     ">
-                        <label for="name">Área deseada</label>
+                        <label for="name" data-lang-es="Área deseada" data-lang-en="Desired Area">Área deseada</label>
                         <select class="input input-equipo" name="equipo-direccion" id="equipo-direccion"> 
-                            <option value="#">Selecciona una opción</option>
+                            <option value="#"  data-lang-es="Selecciona una opción" data-lang-en="Select an option">Selecciona una opción</option>
                             <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
                             <option value="Administrativo">Administrativo</option>
                             <option value="Recepción">Recepción</option>
@@ -591,7 +476,7 @@
                         </select>
                     </div>
                     <div>
-                        <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red">Enviar información</a><br>
+                        <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red mb-3" data-lang-es="Enviar información" data-lang-en="Send Information">Enviar información</a><br>
                         <label id="labelVacantes"></label>
                     </div>
 
@@ -599,541 +484,118 @@
             <div class="image-content">
                 <img src="src/img-grcs/TCI_equipo2-copia.png" alt="">
             </div>
-            <!-- <div class="form-equipo">
-                <h2 class="subtitulo">FORMA PARTE DE <br> NUESTRO EQUIPO</h2>
-                <div class="mb-3">
-                    <label class="label-equipo" for="">Nombre Completo</label> <br>
-                    <input class="input-equipo" id="nombre-equipo" type="text"> <br>
+        </div>
+    </section>
 
-                    <label class="label-equipo" for="">Teléfono</label> <br>
-                    <input class="input-equipo" id="number-equipo" type="number"> <br>
-                    <label class="label-equipo" for="">E-mail</label> <br>
-                    <input class="input-equipo" id="email-equipo" type="email" name="email"><br>
-                    <label class="label-equipo" for="">Área deseada</label> <br>
-                    <select class="input" name="equipo-direccion" id="equipo-direccion"> 
-                    <option value="#">Selecciona una opción</option>
-                    <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
-                    <option value="Administrativo">Administrativo</option>
-                    <option value="Recepción">Recepción</option>
-                    <option value="Finanzas">Finanzas</option>
-                    <option value="Contabilidad">Contabilidad</option>
-                    <option value="Tráfico (transportes)">Tráfico (transportes)</option>
-                    <option value="Monitorista">Monitorista</option>
-                    <option value="Mecánico">Mecánico</option>
-                    <option value="Almacen">Almacen</option>
-                    <option value="Operador Nacional">Operador Nacional</option>
-                    <option value="Operador B1">Operador B1</option>
-                    </select>
+    <section>
+        <div class="container-seccion-7  text-center" style="background-color: #2A282A;">
+            <div class="mb-4">
+                <div class="mb-4">
                 </div>
-                <div>
-                    <a id="btnVacantes" style="cursor: pointer;" class="btn-cotizar-red">Enviar información</a><br>
-                    <label id="labelVacantes"></label>
-                </div>
-            </div> -->
+            </div>
         </div>
     </section>
 
 
 
-    <!-- <section class="centered-seccion-8">
-        <div class="container-seccion-8">
-            <div class="seccion-8-left">
-                <h1 class="text-red mb-0">Cotizar en línea</h1>
-                <p class="mb-2">Facilitando la Comparación de Precios y Servicios a Través del Internet</p>
-                <p class="text-black font-weight-bold">Completa los siguientes datos:</p>
+    <section class="quote-section cotizador" id="cotizador">
+        <div class="quote-container">
+            <div class="form-content">
+                <h1 class="mb-0" data-lang-es="Cotizar en línea" data-lang-en="Get a quote here">Cotizar en línea</h1>
+                <p data-lang-es="Facilitando la comparación de precios y servicios a través del internet" data-lang-en="Making it easy to compare prices and services over the internet">Facilitando la comparación de precios y servicios a través del internet</p>
                 <div class="form">
-                    <form action="">
-                        <div>
-                            <label class="text-black font-weight-bold">Tipo de mercancía</label>
-                    <input type="text" class="input" id="mercancia">
-            </div>
-            <div>
-                <label class="text-black font-weight-bold">Peso</label>
-                <input type="number" class="input" id="peso">
-            </div>
-            <div class="origen-destino">
-                <div class="origen">
-                    <h3>Origen</h3>
-                    <label for="selectCities1">País/Estado</label> <br>
-                    <input type="text" class="input" name="Estado" id="selectStates1">
-                    <label for="selectCities1">Ciudad</label>
-                    <input type="text" class="input" name="ciudad" id="selectCities1">
-                </div>
-                <div class="destino">
-                    <h3>Destino</h3>
-                    <label for="selectCities2">País/Estado</label> <br>
-                    <input type="text" class="input" name="Estado-destino" id="selectStates2">
-                    <label for="selectCities2">Ciudad</label> <br>
-                    <input type="text" class="input" name="ciudad-destino" id="selectCities2">
-                </div>
-            </div>
-            <div class="unidad-embalaje">
-                <div class="unidad">
-                    <label for="mercancia">Tipo de Unidad</label> <br>
-                    <input class="input" type="text" name="Unidad" id="unidad">
-                </div>
-                <div class="embalaje">
-                    <label for="Embalaje">Tipo de Embalaje</label> <br>
-                    <input class="input" type="text" name="Embalaje" id="embalaje">
-                </div>
-            </div>
-            <div class="transbordo-nombre">
-                <div class="transbordo">
-                    <label for="mercancia">Transbordo</label> <br>
-                    <select class="input" name="Transbordo" id="transbordo">
-                                    <option value="#">Selecciona una opción</option>
-                                    <option value="si">SÍ</option>
-                                    <option value="no">NO</option>
-                                </select>
-                </div>
-                <div class="nombre">
-                    <label for="name">Nombre Completo</label> <br>
-                    <input type="text" class="input" id="nombre" value="">
-                </div>
-            </div>
-            <div class="telefono-email">
-                <div class="telefono">
-                    <label for="">Número Telefónico</label> <br>
-                    <input class="input" id="telefono" type="number">
-                </div>
-                <div class="email">
-                    <label for="">Correo Electrónico</label> <br>
-                    <input class="input" type="email" id="correo">
-                </div>
-            </div>
-            <div class="comentario">
-                <label for="">Deja Tu Comentario</label> <br>
-                <textarea name="comentario" cols="30" rows="2" id="comentario"></textarea>
-            </div>
-            </form>
-        </div>
-        </div>
-        <div class="seccion-8-right">
-            <div class="img-cotizador">
-                <img src="src/cotizador.png" alt="Cotizador">
-            </div>
-        </div>
-        </div>
-    </section> -->
+                    <div class="div-form">
+                        <form action="#">
+                            <div style="display: flex;     justify-content: space-between;" class="mb-2">
+                                <div class="form-group">
+                                    <label for="name" data-lang-es="Tipo de mercancía" data-lang-en="Type of merchandise">Tipo de mercancía</label>
+                                    <input type="text" id="mercancia">
+                                </div>
+                                <!-- <div class="form-group">
+                                    <label for="email">Peso</label>
+                                    <input type="number" min="0" class="input" id="peso" placeholder="Ingresa el peso aquí">
+                                </div> -->
+                            </div>
+                            <!-- <div class="origen-destino">
+                                <div style="display: flex; justify-content: space-between;" class="mb-2">
+                                    <div class="origen form-group">
+                                        <label>Origen (País/Estado)</label>
+                                        <input type="text" class="input" name="Estado" placeholder="Escribe el origen aquí" id="selectStates1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="selectCities1">Ciudad</label>
+                                        <input type="text" class="input" name="ciudad" placeholder="Escribe la ciudad aquí" id="selectCities1">
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;" class="mb-2">
+                                    <div class="destino form-group">
+                                        <label>Destino (País/Estado)</label>
+                                        <input type="text" class="input" name="Estado-destino" placeholder="Escribe el destino aquí" id="selectStates2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="selectCities2">Ciudad</label>
+                                        <input type="text" class="input" name="ciudad-destino" placeholder="Escribe la ciudad aquí" id="selectCities2">
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="unidad-embalaje">
+                                <div style="display: flex; justify-content: space-between;" class="mb-2">
+                                    <div class="unidad form-group">
+                                        <label for="mercancia">Tipo de Unidad</label>
+                                        <input class="input" type="text" name="Unidad" id="unidad" placeholder="Escribe la unidad aquí">
+                                    </div>
+                                    <div class="embalaje form-group">
+                                        <label for="Embalaje">Tipo de Embalaje</label>
+                                        <input class="input" type="text" name="Embalaje" id="embalaje" placeholder="Escribe el emblaje aquí">
+                                    </div>
+                                </div>
+
+                            </div> -->
+                            <div class="transbordo-nombre mb-2">
+                                <!-- <div class="transbordo form-group">
+                                    <label for="mercancia">Transbordo</label>
+                                    <select class="input" name="Transbordo" id="transbordo">
+                                        <option value="#">Selecciona una opción</option>
+                                        <option value="si">SÍ</option>
+                                        <option value="no">NO</option>
+                                    </select>
+                                </div> -->
+                                <div class="nombre form-group ">
+                                    <label for="name" data-lang-es="Nombre completo" data-lang-en="Full name">Nombre completo</label>
+                                    <input type="text" class="input" id="nombre" value="">
+                                </div>
+                            </div>
+                            <div class="telefono-email">
+                                <div class="telefono form-group mb-2">
+                                    <label for="" data-lang-es="Número telefónico" data-lang-en="Phone number">Número telefónico</label>
+                                    <input class="input" id="telefono" type="number">
+                                </div>
+                                <div class="email form-group mb-2">
+                                    <label for="" data-lang-es="Correo electrónico" data-lang-en="Email">Correo electrónico</label>
+                                    <input class="input" type="email" id="correo">
+                                </div>
+                            </div>
+                            <div class="comentario form-group  mb-3">
+                                <label for="" data-lang-es="Deja tu comentario" data-lang-en="Leave a comment Here">Deja tu comentario</label>
+                                <textarea name="comentario" cols="30" rows="2" id="comentario"></textarea>
+                            </div>
+                            <div>
+                                <button id="btnCotizar" style="cursor:pointer" data-lang-es="Enviar solucitud" data-lang-en="Send request" class="button-cta btn-cotizar-red">Enviar solucitud</button><br><br>
+                                <label id="labelCotizar"></label>
+                            </div>
+                        </form>
+                    </div>
 
 
+                </div>
 
 
-    <!-- CERTIFICACIONES -->
-
-    <!-- <section class="seccion-certificado">
-        <h2 class="titulo">NUESTRAS CERTIFICACIONES</h2>
-        <div class="container-certificate">
-            <img class="certificate-cuadro" src="src/Logo-R026.png" alt="">
-            <img class="ctpat" src="src/Logo-CTPAT.png" alt="">
-            <img class="certificate-cuadro" src="src/LOGO-ISO.png" alt="">
+            </div>
+            <div class="image-content">
+                <img src="src/img-grcs/MOCKUP TABLET.png" width="75%" alt="Cotizador">
+            </div>
         </div>
     </section>
-    <div class="container-politica">
-        <h2 class="titulo">POLITICA DE CALIDAD</h2>
-        <p class="p" style="text-align: justify;">
-            Trámites de Comercio Internacional lleva a cabo los trámites aduanales de acuerdo con los requerimientos del cliente y en apego a las normas y leyes aplicables, mejorando continuamente la eficacia del sistema de gestión de calidad, aplicando los recursos
-            humanos y técnicos para el logro de los objetivo
-        </p>
-    </div> -->
-
-
-    <!-- SERVICIOS -->
-
-
-    <!-- <section class="container-flex" id="servicios">
-        <h2 class="titulo">NUESTROS SERVICIOS</h2>
-        <div class="container-services">
-            <div class="container-aduana">
-                <img src="src/TCI_Aduanal.png" alt="">
-                <h3 class="subtitulo">AGENCIA ADUANAL</h3>
-                <p class="p">Una Agencia Aduanal Mexicana, <br> con más de 30 años de experiencia en el servicio.</p> <br>
-                <br>
-            </div>
-
-            <div class="container-transporte">
-
-
-                <h3 class="subtitulo">TRANSPORTE NACIONAL <br> E INTERNACIONAL</h3>
-                <p class="p">Trámites de comercio internacional, se especializa en el transporte de mercancía, nacional e internacional, por cielo, mar y tierra.</p>
-                <br>
-                <br>
-                <img src="src/TCI_Transporte.png" alt="">
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="transporte">
-
-        <div class="container-transport">
-
-            <div class="img-transport">
-
-                <img src="src/transporte.gif" alt="">
-            </div>
-
-            <div class="text-transport">
-
-                <h2 class="titulo">POR CIELO, <br> POR MAR <br> Y POR TIERRA.</h2>
-
-                <p class="p">Nada nos detiene. <br> Ofrecemos todas las <br> vías de transporte <br> para que tu carga <br> siempre llegue.</p> <br> <br>
-                <a href="#cotizador" class="button-cta">Ver cómo</a>
-            </div>
-        </div>
-    </section> -->
-    <!-- TERMINA SERVICIOS -->
-
-    <!-- <section class="terrestre">
-
-        <div class="container-terrestre" id="terrestre">
-            <div class="text-terrestre">
-                <h2 class="titulo">
-                    TODO PARA TU <br> FLETE TERRESTRE
-                </h2>
-                <p class="p">
-                    <i class='bx bx-check'></i>3.5 toneladas <br>
-                    <i class='bx bx-check'></i>7 toneladas <br>
-                    <i class='bx bx-check'></i>Caja refrigerada <br>
-                    <i class='bx bx-check'></i>Caja seca<br>
-                    <i class='bx bx-check'></i>Pickup 600kgs<br>
-                    <i class='bx bx-check'></i>Plataformas <br>
-                    <i class='bx bx-check'></i>Tractocamiones
-                </p>
-                <br>
-                <br>
-
-                <a href="#cotizador" class="button-cta">Cotizar mi flete</a>
-
-            </div>
-            <div class="img-terrestre">
-                <img src="src/Logistica.png" alt="">
-            </div>
-        </div>
-    </section> -->
-
-    <!--   EMPIEZA SECCIÓN CLIENTES -->
-
-    <!-- <section class="clientes">
-
-        <div class="container-clientes" id="clientes">
-
-            <div class="img-clientes">
-
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/PIMICO 1.png" alt="">
-                    <h4>Químico</h4>
-                </div>
-
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/CLOTHES 1.png" alt="">
-                    <h4>Textil</h4>
-                </div>
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/comida-sana 1.png" alt="">
-                    <h4>Alimenticio</h4>
-                </div>
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/MINERIA 1.png" alt="">
-                    <h4>Minero</h4>
-                </div>
-                <div class="clientes-1">
-                    <img class="client-logo" src="src/logo.png" alt="">
-                </div>
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/INDUSTRIA 1.png" alt="">
-                    <h4>Industrial</h4>
-                </div>
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/AUTO 1.png" alt="">
-                    <h4>Automotriz</h4>
-                </div>
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/block 2.png" alt="">
-                    <h4>Acerero</h4>
-                </div>
-
-                <div class="clientes-1">
-                    <img class="img-cliente" src="src/TCI SITE/agricultura.png" alt="">
-                    <h4>Agricultura y <br>Ganadería</h4>
-                </div>
-
-            </div>
-            <div class="text-clientes">
-                <h2 class="titulo">
-                    NUESTROS CLIENTES
-                </h2> <br>
-                <div class="acesos">
-                    <label class="button-clientes" id="clientes-2">Acceder a clientes
-                </label> <br> <br>
-                    <div id="caja-clientes" class="caja-clientes">
-                        <a href="http://tcim3.op-cloud.net/slamdigital4/default.aspx">SLAM DIGITAL</a> <br>
-                        <a href="http://tcinet.op-cloud.net/slamboard/default.aspx">SLAM BOARD</a><br>
-                        <a href="http://tci.merkanet.com/">CUENTA DE GASTOS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- TERMINA SECCIÓN CLIENTES -->
-
-    <!-- EMPIEZA SECCIÓN DE EMPRESA LÍDER -->
-
-    <!-- <section class="empresa">
-        <h2 class="titulo">EMPRESA LÍDER</h2>
-        <div class="container-empresa" id="empresa">
-
-            <div class="div1">
-
-                <i class='bx bx-support bx-sm'></i>
-                <h3 class="subtitulo-3">Centro de información</h3>
-                <p>Un solo centro de información donde un ejecutivo de cuenta brindará toda la información necesaria, que representa una disminución considerable en tiempos de respuesta.</p>
-            </div>
-            <div class="div1">
-                <i class='bx bxs-bookmark-alt bx-sm'></i>
-                <h3 class="subtitulo-3">Asesoría legal</h3>
-                <p>Asesoría legal a través de nuestro personal altamente calificado con una amplia experiencia en operaciones de comercio internacional.</p>
-            </div>
-            <div class="div1">
-                <i class='bx bxs-truck bx-sm'></i>
-                <h3 class="subtitulo-3">Transporte propio</h3>
-                <p>Línea de transporte propia contando con una amplia flotilla de tractocamiones, plataformas, cajas, camiones y camionetas.</p>
-            </div>
-
-        </div>
-
-        <div class="container-empresa">
-
-            <div class="div1">
-                <i class='bx bxs-chat bx-sm'></i>
-                <h3 class="subtitulo-3">Comunicación total</h3>
-                <p>El enlace con el resto de nuestras oficinas en otros puntos del país por medio de líneas privadas logrando así una eficiente comunicación y substanciales ahorros a nuestros clientes en costos de llamadas de larga distancia.</p>
-            </div>
-            <div class="div1">
-                <i class='bx bxs-report bx-sm'></i>
-                <h3 class="subtitulo-3">Reportes diarios</h3>
-                <p>Reportes diarios de recepción de mercancías con la frecuencia y el medio que mejor se adecúe a sus necesidades.</p>
-            </div>
-            <div class="div1">
-                <i class='bx bxs-factory bx-sm'></i>
-                <h3 class="subtitulo-3">Almacenamiento</h3>
-                <p>Almacenaje en nuestras bodegas del lado americano sin costo para embarques de importación.</p>
-            </div>
-
-        </div>
-    </section> -->
-
-    <!-- TERMINA SECCIÓN DE EMPRESA LÍDER -->
-
-    <!-- COMIENZA SECCIÓN DE COTIZADOR -->
-
-    <!-- <section class="cotizador" id="cotizador">
-
-        <div class="container-cotizador">
-
-            <div class="cotizador-img">
-                <div class="img-background"></div>
-            </div>
-
-            <div class="form">
-
-                <h2 class="subtitulo">COTIZA EN LÍNEA</h2>
-
-                <div class="div-form">
-
-                    <form action="">
-                        <label for="mercancia">Tipo de Mercancía</label> <br>
-                        <input class="select" name="Tipo de Mercancía" id="mercancia">
-
-                        </input>
-                        <label for="peso">Peso</label> <br>
-                        <input type="number" class="input" id="peso">
-
-                        <div class="origen-destino">
-                            <div class="origen">
-                                <h3>Origen</h3>
-                                <label for="selectCities1">País/Estado</label> <br>
-                                <input type="text" class="input" name="Estado" id="selectStates1">
-                                </input>
-                                <label for="selectCities1">Ciudad</label>
-                                <input type="text" class="input" name="ciudad" id="selectCities1">
-                                </input>
-                            </div>
-                            <div class="destino">
-                                <h3>Destino</h3>
-                                <label for="selectCities2">País/Estado</label> <br>
-                                <input type="text" class="input" name="Estado-destino" id="selectStates2">
-                                </input>
-                                <label for="selectCities2">Ciudad</label> <br>
-                                <input type="text" class="input" name="ciudad-destino" id="selectCities2">
-                                </input> <br>
-                            </div>
-                        </div>
-
-                        <div class="unidad-embalaje">
-                            <div class="unidad">
-                                <label for="mercancia">Tipo de Unidad</label> <br>
-                                <input class="input" type="text" name="Unidad" id="unidad">
-                                </input>
-                            </div>
-                            <div class="embalaje">
-                                <label for="Embalaje">Tipo de Embalaje</label> <br>
-                                <input class="input" type="text" name="Embalaje" id="embalaje">
-                                </input>
-                            </div>
-                        </div>
-                        <div class="transbordo-nombre">
-                            <div class="transbordo">
-                                <label for="mercancia">Transbordo</label> <br>
-                                <select class="input" name="Transbordo" id="transbordo"> 
-                <option value="#">
-                    Selecciona una opción
-                </option>
-                <option value="si">
-                    SÍ</option>
-                 <option value="no">
-                    NO</option>
-                </select>
-                            </div>
-
-                            <div class="nombre">
-                                <label for="name">Nombre Completo</label> <br>
-                                <input type="text" class="input" id="nombre" value="">
-                            </div>
-                        </div>
-
-                </div>
-
-                <div class="telefono-email">
-
-                    <div class="telefono">
-                        <label for="">Número Telefónico</label> <br>
-                        <input class="input" id="telefono" type="number">
-                    </div>
-                    <div class="email">
-                        <label for="">Correo Electrónico</label> <br>
-                        <input class="input" type="email" id="correo">
-                    </div>
-
-                </div>
-
-                <div class="comentario">
-                    <label for="">Deja Tu Comentario</label> <br>
-                    <textarea name="comentario" cols="30" rows="2" id="comentario"></textarea>
-                </div> <br>
-
-                <a id="btnCotizar" style="cursor:pointer" class="button-cta">Enviar solucitud</a><br><br>
-                <label id="labelCotizar"></label>
-                </form>
-            </div>
-        </div>
-
-    </section> -->
-
-    <!-- TERMINA SECCIÓN DE COTIZADOR -->
-
-    <!-- ÚNETE AL EQUIPO -->
-
-    <!-- <section class="equipo">
-
-        <div class="container-equipo" id="divEquipo">
-            <div class="img-equipo">
-                <img src="src/TCI_equipo2.png" alt="">
-            </div>
-            <div class="form-equipo">
-                <h2 class="subtitulo">FORMA PARTE DE <br> NUESTRO EQUIPO</h2>
-                <label class="label-equipo" for="">Nombre Completo</label> <br>
-                <input class="input-equipo" id="nombre-equipo" type="text"> <br>
-
-                <label class="label-equipo" for="">Teléfono</label> <br>
-                <input class="input-equipo" id="number-equipo" type="number"> <br>
-                <label class="label-equipo" for="">E-mail</label> <br>
-                <input class="input-equipo" id="email-equipo" type="email" name="email"><br>
-                <label class="label-equipo" for="">Área deseada</label> <br>
-                <select class="input" name="equipo-direccion" id="equipo-direccion"> 
-                <option value="#">Selecciona una opción</option>
-                <option value="importaciones y Exportaciones">Importaciones y Exportaciones</option>
-                <option value="Administrativo">Administrativo</option>
-                <option value="Recepción">Recepción</option>
-                <option value="Finanzas">Finanzas</option>
-                <option value="Contabilidad">Contabilidad</option>
-                <option value="Tráfico (transportes)">Tráfico (transportes)</option>
-                <option value="Monitorista">Monitorista</option>
-                <option value="Mecánico">Mecánico</option>
-                <option value="Almacen">Almacen</option>
-                <option value="Operador Nacional">Operador Nacional</option>
-                <option value="Operador B1">Operador B1</option>
-                </select>
-                <a id="btnVacantes" style="cursor: pointer;" class="button-cta-equipo">Enviar</a><br>
-                <label id="labelVacantes"></label>
-            </div>
-        </div>
-    </section> -->
-
-
-    <!-- IFRAME -->
-    <!-- <div class="iframe">
-        <div class="text-iframe">
-            <h2>Más sobre TCI</h2>
-        </div>
-        <div class="iframe-iframe">
-            <button id="hola">Linkedin</button>
-            <button id="adios">facebook</button>
-            <div class="iframe-linkedin" id="link">
-                <p>Más sobre nosotros en Linkedin</p>
-                <a href="https://www.linkedin.com/company/tci-agencia-aduanal-transporte/"><img src="src/tci.jpg" alt=""></a>
-            </div>
-            <div class="iframe-fb" id="fb">
-                <p>Más sobre nosotros en facebook</p>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftcitransportes%2F&tabs=videos&width=700&height=200&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="500" height="165"
-                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <footer>
-        <div class="container-footer">
-            <div class="logo">
-                <div class="linea-horizontal"></div>
-                <img src="src/logoblanco.png" alt="">
-                <div class="info">
-                    <p class="Pdireccion">
-                        Calle Hilatura 291, Parque Industrial Lajat, <br> C.P. 27280 Torreón, Coah., México. <br> Tel: (871) 729 75 00 <br> tci@tci.com.mx
-                    </p>
-                    <p class="mostrar-quejas">Quejas y sugerencias</p>
-
-                </div>
-            </div>
-
-            <div class="myDIV">
-            </div>
-            <div>
-                <div class="hide" id="quejas">
-                    <p id="occce">En caso necesario a OCCCE (organismo certificador)<br>al correo:
-                        <a href="mailto:alejandra.rodriguez@occce.mx"><u>alejandra.rodriguez@occce.mx.</u></a>
-                    </p>
-                    <p>
-                        <i class='bx bx-message-square-error bx-md' id="quejas"></i> <br> Con gusto atendemos sus quejas y sugerencias en el correo: <a href="mailto:calidad@tci.com.mx"><u>calidad@tci.com.mx</u></a>
-                    </p>
-                    <i class='bx bx-x' id="ocultar-quejas"></i>
-                </div> <br>
-                <br>
-
-            </div>
-            <p>
-                <a href="https://www.facebook.com/tcitransportes" target="_blank"><i class='bx bxl-facebook-circle bx-sm'>
-                </i>
-            </a>
-                <a href="https://www.linkedin.com/company/tci-agencia-aduanal-transporte/" target="_blank">
-                    <i class='bx bxl-linkedin-square bx-sm'>
-                </i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCLL4OR1GD-5Tg9f1qiIxEdg" target="_blank">
-                    <i class='bx bxl-youtube bx-sm'></i>
-                </a>
-            </p>
-        </div>
-    </footer> -->
-
 
     <footer>
         <div class="div-footer">
@@ -1143,7 +605,8 @@
                     <div>
                         <img src="src/logoblanco.png" class="mb-2">
 
-                        <p class="text-white mb-2 font-weight-bold">Por cielo y por mar nada nos detiene</p>
+                        <p class="text-white mb-2 font-weight-bold" data-lang-es="Por cielo, mar y tierra nada nos detiene." data-lang-en="By sky, by sea and by land Nothing stops us
+                        ">Por cielo, mar y tierra nada nos detiene.</p>
                         <div class="icons-redes-footer">
                             <a href="https://www.facebook.com/tcitransportes" target="_blank">
                                 <i class='bx bxl-facebook-circle bx-sm text-white'></i>
@@ -1162,16 +625,18 @@
                     </div>
                     <div>
                         <div class="calle">
-                            <p class="text-white font-weight-bold">Contacto</p>
-                            <p class="text-white ">Calle Hilatura 291, Parque Industrial Lajat, <br> C.P. 27280 Torreón, Coah., México.
-                                <br> Tel: (871) 729 75 00 <br> tci@tci.com.mx
+                            <p class="text-white font-weight-bold" data-lang-es="Contacto" data-lang-en="Contact">Contacto</p>
+                            <p class="text-white ">Calle Hilatura 291, Parque Industrial Lajat, <br> Torreón, Coah., México. C.P. 27272
+                                <br> Tel: +52 (871) 729 75 00 <br> tci@tci.com.mx
+                            </p>
                         </div>
                     </div>
                     <div>
                         <div class="quejas">
-                            <p class="text-white font-weight-bold">Quejas y <br> sugerencias</p>
-                            <p class="text-white">Con gusto atendemos sus quejas y <br> sugerencias en el correo: <br>
-                                <a class="text-red" href="mailto:calidad@tci.com.mx"><u>calidad@tci.com.mx</u></a>
+                            <p class="text-white font-weight-bold" data-lang-es="Quejas y <br> sugerencias" data-lang-en="Complaints and  <br>  suggestions
+                                ">Quejas y <br> sugerencias</p>
+                            <p class="text-white" data-lang-es="Con gusto atendemos sus quejas y <br> sugerencias en el correo: <br> <a class='text-white' href='mailto:calidad@tci.com.mx'><u>calidad@tci.com.mx</u>" data-lang-en="We are happy to hear your complaints <br> and suggestions in email: <br> <a class='text-white' href='mailto:calidad@tci.com.mx'><u>calidad@tci.com.mx</u>">Con gusto atendemos sus quejas y <br> sugerencias en el correo: <br>
+                                <a class="text-white" href="mailto:calidad@tci.com.mx"><u>calidad@tci.com.mx</u></a>
                             </p>
                         </div>
                     </div>
@@ -1198,6 +663,65 @@
     <script src="javascript.js"></script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Añadir evento de clic a todos los enlaces de navegación
+            document.querySelectorAll('.nav-link').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault(); // Evitar comportamiento por defecto del enlace
+
+                    // Obtener el destino del enlace
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        // Llamar a la función de desplazamiento suave
+                        smoothScroll(targetElement, 1000); // Duración de 1 segundo (1000 ms)
+                    }
+                });
+            });
+
+            function smoothScroll(targetElement, duration) {
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                const startPosition = window.scrollY;
+                const distance = targetPosition - startPosition;
+                let startTime = null;
+
+                function animation(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const run = ease(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+                    if (timeElapsed < duration) requestAnimationFrame(animation);
+                }
+
+                function ease(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return c / 2 * t * t + b;
+                    t--;
+                    return -c / 2 * (t * (t - 2) - 1) + b;
+                }
+
+                requestAnimationFrame(animation);
+            }
+
+            const language = localStorage.getItem('selectedLanguage') || 'es'; // 'es' es el idioma por defecto
+            // Aplica el contenido basado en el idioma almacenado
+            changeLanguage(language);
+
+            if (language === 'en') {
+                $("#btnLanguage-en").addClass("hidden");
+                $("#btnLanguage-es").removeClass("hidden");
+            }
+            if (language === 'es') {
+                $("#btnLanguage-en").removeClass("hidden");
+                $("#btnLanguage-es").addClass("hidden");
+            }
+
+
+        });
+
+
+
         $(document).ready(function() {
             $('#videoLink').magnificPopup({
                 type: 'iframe',
@@ -1213,8 +737,173 @@
                 }
             });
         });
+
+        const translations = {
+            "es": {
+                "serviciostext": "SERVICIOS",
+                "equipotransportetext": "EQUIPO DE TRANSPORTE",
+                "clientestext": "CLIENTES",
+                "unetealtext": "ÚNETE AL EQUIPO",
+                "cotizartext": "COTIZAR EL ENVÍO",
+                "accesclientestext": "ACCESO A CLIENTES",
+                "tituloBanner": "Con TCI, <br> llega más lejos.",
+                "tituloDosBanner": "Somos una  agencia aduanal,",
+                "tituloTresBanner": "logística y transporte",
+                "tituloCuatroBanner": "Rápido, completo y seguro.",
+                "experencias": "+30 años",
+                "puntos": "17 puntos",
+                "subtituloExperencias": "de experiencia",
+                "subtituloPuntos": "de operación",
+                "tituloseccionvideo": "Agencia aduanal / Transportes",
+                "subtitulo1seccionvideo": "Somos una empresa líder en el mercado de transporte y logística, con más de 30 años de experiencia en el sector.",
+                "subtitulo2seccionvideo": "Nuestro compromiso es brindar un servicio de calidad, seguro y eficiente a nuestros clientes.",
+            },
+            "en": {
+                "serviciostext": "SERVICES",
+                "equipotransportetext": "TRANSPORT TEAM",
+                "clientestext": "CLIENTS",
+                "unetealtext": "JOIN THE TEAM",
+                "cotizartext": "GET A SHIPPING QUOTE",
+                "accesclientestext": "ACCESS TO CUSTOMERS",
+                "tituloBanner": "With TCI, <br> it goes further.",
+                "tituloDosBanner": "We are a custom broker,",
+                "tituloTresBanner": "logistics and transportation",
+                "tituloCuatroBanner": "Fast, complete and secure.",
+                "experencias": "+30 years",
+                "puntos": "17 points",
+                "subtituloExperencias": "of experience",
+                "subtituloPuntos": "of operation",
+                "tituloseccionvideo": "Custom broker / Transportation",
+                "subtitulo1seccionvideo": "We are a leading company in the transport and logistics market, with more than 30 years of experience in the sector.",
+                "subtitulo2seccionvideo": "Our commitment is to provide a quality, safe and efficient service to our customers.",
+
+            }
+        };
+
+        function changeLanguage(language) {
+            localStorage.setItem('selectedLanguage', language);
+
+            document.querySelectorAll('.serviciostext').forEach(element => {
+                element.innerText = translations[language].serviciostext;
+            });
+
+            document.querySelectorAll('.equipotransportetext').forEach(element => {
+                element.innerText = translations[language].equipotransportetext;
+            });
+
+            document.querySelectorAll('.clientestext').forEach(element => {
+                element.innerText = translations[language].clientestext;
+            });
+
+            document.querySelectorAll('.unetealtext').forEach(element => {
+                element.innerText = translations[language].unetealtext;
+            });
+
+            document.querySelectorAll('.cotizartext').forEach(element => {
+                element.innerText = translations[language].cotizartext;
+            });
+
+            document.querySelectorAll('.accesclientestext').forEach(element => {
+                element.innerText = translations[language].accesclientestext;
+            });
+
+            document.querySelectorAll('.tituloBanner').forEach(element => {
+                element.innerHTML = translations[language].tituloBanner;
+            });
+
+            document.querySelectorAll('.tituloDosBanner').forEach(element => {
+                element.innerText = translations[language].tituloDosBanner;
+            });
+
+            document.querySelectorAll('.tituloTresBanner').forEach(element => {
+                element.innerText = translations[language].tituloTresBanner;
+            });
+
+            document.querySelectorAll('.tituloCuatroBanner').forEach(element => {
+                element.innerText = translations[language].tituloCuatroBanner;
+            });
+
+            document.querySelectorAll('.experencias').forEach(element => {
+                element.innerText = translations[language].experencias;
+            });
+
+            document.querySelectorAll('.puntos').forEach(element => {
+                element.innerText = translations[language].puntos;
+            });
+
+            document.querySelectorAll('.subtituloExperencias').forEach(element => {
+                element.innerText = translations[language].subtituloExperencias;
+            });
+
+            document.querySelectorAll('.subtituloPuntos').forEach(element => {
+                element.innerText = translations[language].subtituloPuntos;
+            });
+
+            document.querySelectorAll('.tituloseccionvideo').forEach(element => {
+                element.innerText = translations[language].tituloseccionvideo;
+            });
+
+            document.querySelectorAll('.subtitulo1seccionvideo').forEach(element => {
+                element.innerText = translations[language].subtitulo1seccionvideo;
+            });
+
+            document.querySelectorAll('.subtitulo2seccionvideo').forEach(element => {
+                element.innerText = translations[language].subtitulo2seccionvideo;
+            });
+
+            document.querySelectorAll('[data-lang-es]').forEach(el => {
+                el.innerHTML = el.getAttribute(`data-lang-${language}`);
+            });
+
+            if (language === 'en') {
+                $("#btnLanguage-en").addClass("hidden");
+                $("#btnLanguage-es").removeClass("hidden");
+            }
+            if (language === 'es') {
+                $("#btnLanguage-en").removeClass("hidden");
+                $("#btnLanguage-es").addClass("hidden");
+            }
+
+            var iframe = document.querySelector('.iframe-video');
+            if (language === 'en') {
+                iframe.src = "https://www.youtube.com/embed/mH-Yp4cye6s";
+            } else if (language === 'es') {
+                iframe.src = "https://www.youtube.com/embed/CgTPFzyh8QY"; // video en español
+            }
+
+            const imagenSeccion = document.getElementById('imagenSeccion');
+
+            if (language === 'es') {
+                // Imagen en español
+                imagenSeccion.style.backgroundImage = "url('src/img-grcs/banner-NUEVO.png')";
+            } else if (language === 'en') {
+                // Imagen en inglés
+                imagenSeccion.style.backgroundImage = "url('src/img-grcs/BANNER-NUEVO-INGLES.png')";
+            }
+
+        }
     </script>
 
+    <script>
+        const buttonClientes = document.getElementById('clientes-2');
+        const cajaClientes = document.getElementById('caja-clientes');
+
+        // Alterna la visibilidad del menú al hacer clic en el botón
+        buttonClientes.addEventListener('click', () => {
+            if (cajaClientes.style.display === 'block') {
+                cajaClientes.style.display = 'none';
+            } else {
+                cajaClientes.style.display = 'block';
+            }
+        });
+
+        // Oculta el menú si se hace clic fuera de él
+        document.addEventListener('click', (event) => {
+            if (!buttonClientes.contains(event.target) && !cajaClientes.contains(event.target)) {
+                cajaClientes.style.display = 'none';
+            }
+        });
+    </script>
 
 </body>
 
