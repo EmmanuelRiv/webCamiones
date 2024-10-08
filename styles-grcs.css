@@ -510,7 +510,7 @@ nav {
 .steps-centered-seccion-3 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 20px;
 }
 
@@ -1750,6 +1750,7 @@ nav ul li a:hover {
 
 .text-with-line-clientes {
     text-align: justify;
+    font-size: 16px;
 }
 
 .button-clientes {
